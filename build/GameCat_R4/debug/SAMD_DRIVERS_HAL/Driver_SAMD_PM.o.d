@@ -1,0 +1,7 @@
+build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o: \
+ SAMD_DRIVERS_HAL/Driver_SAMD_PM.c SAMD_DRIVERS_HAL/Driver_SAMD_PM.h \
+ SAMD_MAIN/Storage_CLASS.h
+
+SAMD_DRIVERS_HAL/Driver_SAMD_PM.h:
+
+SAMD_MAIN/Storage_CLASS.h:
