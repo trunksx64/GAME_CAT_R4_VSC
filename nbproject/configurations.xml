@@ -11,6 +11,7 @@
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_SST25VF016.h</itemPath>
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_23K256.h</itemPath>
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_24CSM01.h</itemPath>
+        <itemPath>SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.h</itemPath>
       </logicalFolder>
       <logicalFolder name="SAMD_DRIVERS_HAL"
                      displayName="SAMD_DRIVERS_HAL"
@@ -22,6 +23,8 @@
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_PORT.h</itemPath>
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.h</itemPath>
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.h</itemPath>
+        <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.h</itemPath>
+        <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.h</itemPath>
       </logicalFolder>
       <logicalFolder name="SAMD_FreeRTOS"
                      displayName="SAMD_FreeRTOS"
@@ -74,6 +77,7 @@
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_SST25VF016.c</itemPath>
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_23K256.c</itemPath>
         <itemPath>SAMD_CONTROL_HAL/Control_HAL_24CSM01.c</itemPath>
+        <itemPath>SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.c</itemPath>
       </logicalFolder>
       <logicalFolder name="SAMD_DRIVERS_HAL"
                      displayName="SAMD_DRIVERS_HAL"
@@ -85,6 +89,8 @@
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_PORT.c</itemPath>
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.c</itemPath>
         <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.c</itemPath>
+        <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.c</itemPath>
+        <itemPath>SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.c</itemPath>
       </logicalFolder>
       <logicalFolder name="SAMD_FreeRTOS"
                      displayName="SAMD_FreeRTOS"

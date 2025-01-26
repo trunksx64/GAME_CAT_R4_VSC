@@ -23,19 +23,19 @@
 /******************************************************************************/
 
 /* Functions ::: Development */
-uint01_t xControl_HAL_FLASH_SST25VF016_CHECK(void) {
+uint01_t xControl_HAL_FLASH_SST25VF016_CHECK (void) {
     /* GET ::: Serial Into FLASH Memory */
     return (xControl_HAL_FLASH_SST25VF016_GET_JEDEC() == CONTROL_HAL_FLASH_SST25VF016_JEDEC_ID ? pdSET : pdCLR);
 }
 
-void vControl_HAL_FLASH_SST25VF016_CONFIG(void) {
+void vControl_HAL_FLASH_SST25VF016_CONFIG (void) {
     /* Unlock ::: All Block Protection */
     vControl_HAL_FLASH_SST25VF016_PUT_STATUS_CLEAR(CONTROL_HAL_FLASH_SST25VF016_STATUS_REG_BPW_BIT);
 }
 
 /*----------------------------------------------------------------------------*/
 
-void vControl_HAL_FLASH_SST25VF016_WRITE_ENABLE(void) {
+void vControl_HAL_FLASH_SST25VF016_WRITE_ENABLE (void) {
     /* Select ::: Memory FLASH */
     FLASH_SST25VF016_SS_ENABLE();
     {
@@ -46,7 +46,7 @@ void vControl_HAL_FLASH_SST25VF016_WRITE_ENABLE(void) {
     FLASH_SST25VF016_SS_DISABLE();
 }
 
-void vControl_HAL_FLASH_SST25VF016_WRITE_DISABLE(void) {
+void vControl_HAL_FLASH_SST25VF016_WRITE_DISABLE (void) {
     /* Select ::: Memory FLASH */
     FLASH_SST25VF016_SS_ENABLE();
     {
@@ -57,7 +57,7 @@ void vControl_HAL_FLASH_SST25VF016_WRITE_DISABLE(void) {
     FLASH_SST25VF016_SS_DISABLE();
 }
 
-void vControl_HAL_FLASH_SST25VF016_ENABLE_WRITE_STATUS(void) {
+void vControl_HAL_FLASH_SST25VF016_ENABLE_WRITE_STATUS (void) {
     /* Select ::: Memory FLASH */
     FLASH_SST25VF016_SS_ENABLE();
     {
@@ -70,7 +70,7 @@ void vControl_HAL_FLASH_SST25VF016_ENABLE_WRITE_STATUS(void) {
 
 /*----------------------------------------------------------------------------*/
 
-uint08_t xControl_HAL_FLASH_SST25VF016_GET_STATUS(void) {
+uint08_t xControl_HAL_FLASH_SST25VF016_GET_STATUS (void) {
     /* Local ::: Variables */
     uint08_t RETURN = 0U;
 
@@ -93,7 +93,7 @@ uint08_t xControl_HAL_FLASH_SST25VF016_GET_STATUS(void) {
     return (RETURN);
 }
 
-void vControl_HAL_FLASH_SST25VF016_PUT_STATUS(uint08_t DATA) {
+void vControl_HAL_FLASH_SST25VF016_PUT_STATUS (uint08_t DATA) {
     /* SET :: Write Status Register */
     vControl_HAL_FLASH_SST25VF016_ENABLE_WRITE_STATUS();
 
@@ -110,7 +110,7 @@ void vControl_HAL_FLASH_SST25VF016_PUT_STATUS(uint08_t DATA) {
     FLASH_SST25VF016_SS_DISABLE();
 }
 
-void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_SET(uint08_t DATA) {
+void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_SET (uint08_t DATA) {
     /* Local ::: Variables */
     uint08_t STATUS = 0U;
 
@@ -127,7 +127,7 @@ void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_SET(uint08_t DATA) {
     vControl_HAL_FLASH_SST25VF016_PUT_STATUS(STATUS);
 }
 
-void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_CLEAR(uint08_t DATA) {
+void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_CLEAR (uint08_t DATA) {
     /* Local ::: Variables */
     uint08_t STATUS = 0U;
 
@@ -146,7 +146,7 @@ void vControl_HAL_FLASH_SST25VF016_PUT_STATUS_CLEAR(uint08_t DATA) {
 
 /*----------------------------------------------------------------------------*/
 
-void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_ENABLE(void) {
+void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_ENABLE (void) {
     /* Select ::: Memory FLASH */
     FLASH_SST25VF016_SS_ENABLE();
     {
@@ -157,7 +157,7 @@ void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_ENABLE(void) {
     FLASH_SST25VF016_SS_DISABLE();
 }
 
-void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_DISABLE(void) {
+void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_DISABLE (void) {
     /* Select ::: Memory FLASH */
     FLASH_SST25VF016_SS_ENABLE();
     {
@@ -168,14 +168,14 @@ void vControl_HAL_FLASH_SST25VF016_BUSY_OUT_DISABLE(void) {
     FLASH_SST25VF016_SS_DISABLE();
 }
 
-uint01_t xControl_HAL_FLASH_SST25VF016_CHECK_POLL_BUSY(void) {
+uint01_t xControl_HAL_FLASH_SST25VF016_CHECK_POLL_BUSY (void) {
     /* GET ::: Sens Busy Data */
     return (!FLASH_SST25VF016_SENSE_BUSY());
 }
 
 /*----------------------------------------------------------------------------*/
 
-uint08_t xControl_HAL_FLASH_SST25VF016_GET_BYTE(uint32_t ADDRESS) {
+uint08_t xControl_HAL_FLASH_SST25VF016_GET_BYTE (uint32_t ADDRESS) {
     /* Local ::: Variables */
     uint08_t RETURN = 0U;
 
@@ -197,7 +197,7 @@ uint08_t xControl_HAL_FLASH_SST25VF016_GET_BYTE(uint32_t ADDRESS) {
         }
         /* Unselect ::: Memory FLASH */
         FLASH_SST25VF016_SS_DISABLE();
-    } else;
+    }
 
     /*------------------------------------------------------------------------*/
 
@@ -205,7 +205,7 @@ uint08_t xControl_HAL_FLASH_SST25VF016_GET_BYTE(uint32_t ADDRESS) {
     return (RETURN);
 }
 
-void vControl_HAL_FLASH_SST25VF016_PUT_BYTE(uint32_t ADDRESS, uint08_t DATA) {
+void vControl_HAL_FLASH_SST25VF016_PUT_BYTE (uint32_t ADDRESS, uint08_t DATA) {
     /* Masking ::: Address */
     if (ADDRESS <= CONTROL_HAL_FLASH_SST25VF016_FINAL_ADDR_MEMORY) {
         /* SET ::: Write Memory */
@@ -234,10 +234,10 @@ void vControl_HAL_FLASH_SST25VF016_PUT_BYTE(uint32_t ADDRESS, uint08_t DATA) {
             /* DLY ::: Time */
             vStorage_DELAY_US(10U);
         } while (xControl_HAL_FLASH_SST25VF016_GET_STATUS() & (CONTROL_HAL_FLASH_SST25VF016_STATUS_REG_BUSY_BIT));
-    } else;
+    }
 }
 
-uint01_t xControl_HAL_FLASH_SST25VF016_GET_PAGE(uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
+uint01_t xControl_HAL_FLASH_SST25VF016_GET_PAGE (uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
     /* Local ::: Variables */
     uint08_t RETURN = 0U;
 
@@ -261,7 +261,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_GET_PAGE(uint32_t ADDRESS, uint08_t *pxBU
         }
         /* Unselect ::: Memory FLASH */
         FLASH_SST25VF016_SS_DISABLE();
-    } else;
+    }
 
     /*------------------------------------------------------------------------*/
 
@@ -269,7 +269,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_GET_PAGE(uint32_t ADDRESS, uint08_t *pxBU
     return (RETURN);
 }
 
-uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_BYTE(uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
+uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_BYTE (uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
     /* Local ::: Variables */
     uint01_t RETURN = 0U;
 
@@ -313,7 +313,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_BYTE(uint32_t ADDRESS, uint08_t 
 
         /* Set ::: RETURN */
         RETURN = pdSET;
-    } else;
+    }
 
     /*------------------------------------------------------------------------*/
 
@@ -321,7 +321,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_BYTE(uint32_t ADDRESS, uint08_t 
     return (RETURN);
 }
 
-uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_WORD(uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
+uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_WORD (uint32_t ADDRESS, uint08_t *pxBUFFER, uint08_t LENGTH) {
     /* Local ::: Variables */
     uint01_t REPEAT = pdSET;
 
@@ -352,7 +352,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_WORD(uint32_t ADDRESS, uint08_t 
                         vFLASH_SST25VF016_PUT(*((uint08_t *) (&ADDRESS) + 2U));
                         vFLASH_SST25VF016_PUT(*((uint08_t *) (&ADDRESS) + 1U));
                         vFLASH_SST25VF016_PUT(*((uint08_t *) (&ADDRESS) + 0U));
-                    } else;
+                    }
 
                     /* PUT ::: Data */
                     xFLASH_SST25VF016_PUTS(pxBUFFER, CONTROL_HAL_FLASH_SST25VF016_WORD_SIZE);
@@ -383,8 +383,8 @@ uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_WORD(uint32_t ADDRESS, uint08_t 
 
             /* CLR ::: Write Memory */
             vControl_HAL_FLASH_SST25VF016_WRITE_DISABLE();
-        } else;
-    } else;
+        }
+    }
 
     /* Retutn ::: Value */
     return (!REPEAT);
@@ -392,7 +392,7 @@ uint01_t xControl_HAL_FLASH_SST25VF016_PUT_PAGE_WORD(uint32_t ADDRESS, uint08_t 
 
 /*----------------------------------------------------------------------------*/
 
-void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_4K(uint32_t ADDRESS) {
+void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_4K (uint32_t ADDRESS) {
     /* Masking ::: Address */
     if (ADDRESS <= CONTROL_HAL_FLASH_SST25VF016_FINAL_ADDR_MEMORY) {
         /* SET ::: Write Memory */
@@ -420,10 +420,10 @@ void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_4K(uint32_t ADDRESS) {
             /* DLY ::: Time */
             vStorage_DELAY_US(10U);
         } while (xControl_HAL_FLASH_SST25VF016_GET_STATUS() & (CONTROL_HAL_FLASH_SST25VF016_STATUS_REG_BUSY_BIT));
-    } else;
+    }
 }
 
-void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_32K(uint32_t ADDRESS) {
+void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_32K (uint32_t ADDRESS) {
     /* Masking ::: Address */
     if (ADDRESS <= CONTROL_HAL_FLASH_SST25VF016_FINAL_ADDR_MEMORY) {
         /* SET ::: Write Memory */
@@ -451,10 +451,10 @@ void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_32K(uint32_t ADDRESS) {
             /* DLY ::: Time */
             vStorage_DELAY_US(10U);
         } while (xControl_HAL_FLASH_SST25VF016_GET_STATUS() & (CONTROL_HAL_FLASH_SST25VF016_STATUS_REG_BUSY_BIT));
-    } else;
+    }
 }
 
-void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_64K(uint32_t ADDRESS) {
+void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_64K (uint32_t ADDRESS) {
     /* Masking ::: Address */
     if (ADDRESS <= CONTROL_HAL_FLASH_SST25VF016_FINAL_ADDR_MEMORY) {
         /* SET ::: Write Memory */
@@ -482,10 +482,10 @@ void vControl_HAL_FLASH_SST25VF016_BLOCK_ERASE_64K(uint32_t ADDRESS) {
             /* DLY ::: Time */
             vStorage_DELAY_US(10U);
         } while (xControl_HAL_FLASH_SST25VF016_GET_STATUS() & (CONTROL_HAL_FLASH_SST25VF016_STATUS_REG_BUSY_BIT));
-    } else;
+    }
 }
 
-void vControl_HAL_FLASH_SST25VF016_CHIP_ERASE(void) {
+void vControl_HAL_FLASH_SST25VF016_CHIP_ERASE (void) {
     /* SET ::: Write Memory */
     vControl_HAL_FLASH_SST25VF016_WRITE_ENABLE();
 
@@ -511,7 +511,7 @@ void vControl_HAL_FLASH_SST25VF016_CHIP_ERASE(void) {
 
 /*----------------------------------------------------------------------------*/
 
-uint16_t xControl_HAL_FLASH_SST25VF016_GET_DEVICE_ID(uint01_t ADD) {
+uint16_t xControl_HAL_FLASH_SST25VF016_GET_DEVICE_ID (uint01_t ADD) {
     uint16_t RETURN = 0U;
 
     /*------------------------------------------------------------------------*/
@@ -539,7 +539,7 @@ uint16_t xControl_HAL_FLASH_SST25VF016_GET_DEVICE_ID(uint01_t ADD) {
     return (RETURN);
 }
 
-uint32_t xControl_HAL_FLASH_SST25VF016_GET_JEDEC(void) {
+uint32_t xControl_HAL_FLASH_SST25VF016_GET_JEDEC (void) {
     /* Local ::: Variables */
     uint32_t RETURN = 0U;
 

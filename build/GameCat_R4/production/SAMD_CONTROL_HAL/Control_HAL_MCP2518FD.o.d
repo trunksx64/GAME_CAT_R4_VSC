@@ -1,0 +1,2 @@
+build/GameCat_R4/production/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o: \
+ SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.c

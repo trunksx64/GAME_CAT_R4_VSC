@@ -6,7 +6,7 @@
 
 /******************************************************************************/
 
-int main(void) {
+int main (void) {
     /* BRK ::: DEBUG */
     pdNOP();
 
@@ -24,6 +24,10 @@ int main(void) {
     vDriver_SAMD_SERCOM1_I2CM_CONFIGURE();
     /* Setting ::: Hardware :: SERCOM2 (SPI) -----------------------------------*/
     vDriver_SAMD_SERCOM2_SPIM_CONFIGURE();
+    /* Setting ::: Hardware :: SERCOM2 (SPI) -----------------------------------*/
+    vDriver_SAMD_SERCOM3_SPIM_CONFIGURE();
+    /* Setting ::: Hardware :: SERCOM2 (SPI) -----------------------------------*/
+    vDriver_SAMD_SERCOM4_SPIM_CONFIGURE();
 
     /*--------------------------------------------------------------------------*/
 

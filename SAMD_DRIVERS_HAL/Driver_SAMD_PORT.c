@@ -6,7 +6,7 @@
 
 /******************************************************************************/
 
-void vDriver_SAMD_PORT_CONFIGURE(void) {
+void vDriver_SAMD_PORT_CONFIGURE (void) {
     /* BRK ::: DEBUG */
     pdNOP();
 
@@ -58,6 +58,17 @@ void vDriver_SAMD_PORT_CONFIGURE(void) {
     PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA30; // SET Port Out (Busy)
     PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA31; // SET Port Out (Ctrl)
 
+#ifdef __DEBUG
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P30] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P31] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
+
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX30] |= PORT_PMUX_PMUXE(DEV_MUXG); // Select Peripheral Multiplexing
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX31] |= PORT_PMUX_PMUXO(DEV_MUXG); // Select Peripheral Multiplexing
+#else
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P30] = PORT_PINCFG_PMUXEN(pdCLR); // Configure Multiplexor Device
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P31] = PORT_PINCFG_PMUXEN(pdCLR); // Configure Multiplexor Device
+#endif
+
     /*- USB ----------------------------------------------------------------- */
 
     /* Configuration ::: Ports(Pins) :: USB(DM/DP)(PA24/PA25) --------------- */
@@ -101,9 +112,9 @@ void vDriver_SAMD_PORT_CONFIGURE(void) {
     PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA06; // Direction Port In  // CHECK SD
 
     /* Configuration ::: Ports(Pins) :: SERCOM2-SPI(SCK/MOSI/MISO)(PA11/PA10/PA09)(PAD[3][2][1]) - */
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA11; // Direction Port Out // SCK
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA10; // Direction Port Out // MOSI
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA09; // Direction Port In  // MISO
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA11; // Direction Port Out // SCK  | DOPO[1]  
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA10; // Direction Port Out // MOSI | DOPO[1]
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA09; // Direction Port In  // MISO | DIPO[1]
 
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P11] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P10] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
@@ -122,10 +133,10 @@ void vDriver_SAMD_PORT_CONFIGURE(void) {
     /* Configuration ::: Ports(Pins) :: Check Device (CHECK_SD)(PA27) - */
     PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA27; // Direction Port In  // INT CAN
 
-    /* Configuration ::: Ports(Pins) :: SERCOM3-SPI(SCK/MISO/MOSI)(PA21/PA22/PA23)(PAD[3][0][1]) - */
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA21; // Direction Port Out // SCK
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA22; // Direction Port Out // MOSI
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA23; // Direction Port In  // MISO
+    /* Configuration ::: Ports(Pins) :: SERCOM3-SPI(SCK/MOSI/MISO)(PA21/PA22/PA23)(PAD[3][0][1]) - */
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA21; // Direction Port Out // SCK  | DOPO[3] 
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA22; // Direction Port Out // MOSI | DOPO[3]
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRCLR = PORT_PA23; // Direction Port In  // MISO | DIPO[1]
 
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P21] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P22] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
@@ -141,17 +152,17 @@ void vDriver_SAMD_PORT_CONFIGURE(void) {
     PORT_REGS->GROUP[GPIO_PORTB].PORT_DIRSET = PORT_PB10; // Direction Port Out // SS SCREEN
     PORT_REGS->GROUP[GPIO_PORTB].PORT_OUTSET = PORT_PB10; // High Output
 
-    /* Configuration ::: Ports(Pins) :: SERCOM4-SPI(SCK/MISO/MOSI)(PA13/PA11/PB11)(PAD[1][0][3]) - */
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA13; // Direction Port Out // SCK
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA12; // Direction Port Out // MOSI
-    PORT_REGS->GROUP[GPIO_PORTB].PORT_DIRCLR = PORT_PB11; // Direction Port In  // MISO
+    /* Configuration ::: Ports(Pins) :: SERCOM4-SPI(SCK/MOSI/MISO)(PA13/PA12/PB11)(PAD[1][0][3]) - */
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA13; // Direction Port Out // SCK  | DOPO[0] 
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_DIRSET = PORT_PA12; // Direction Port Out // MOSI | DOPO[0]
+    PORT_REGS->GROUP[GPIO_PORTB].PORT_DIRCLR = PORT_PB11; // Direction Port In  // MISO | DOPO[3]
 
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P13] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PINCFG[GPIO_P12] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
     PORT_REGS->GROUP[GPIO_PORTB].PORT_PINCFG[GPIO_P11] = PORT_PINCFG_PMUXEN(pdSET); // Configure Multiplexor Device
 
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX13] |= PORT_PMUX_PMUXO(DEV_MUXD); // Select Peripheral Multiplexing
-    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX12] |= PORT_PMUX_PMUXE(DEV_MUXD); // Select Peripheral Multiplexing
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX13] |= PORT_PMUX_PMUXO(DEV_MUXC); // Select Peripheral Multiplexing
+    PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX12] |= PORT_PMUX_PMUXE(DEV_MUXC); // Select Peripheral Multiplexing
     PORT_REGS->GROUP[GPIO_PORTA].PORT_PMUX[GPIO_MUX11] |= PORT_PMUX_PMUXO(DEV_MUXD); // Select Peripheral Multiplexing
 
     /*- USART (SERCOM5) ----------------------------------------------------- */

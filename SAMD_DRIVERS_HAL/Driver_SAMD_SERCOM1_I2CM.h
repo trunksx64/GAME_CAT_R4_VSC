@@ -40,10 +40,10 @@ uint08_t xDriver_SAMD_SERCOM1_I2C_SET_START(uint08_t ADDRESS);
 uint08_t xDriver_SAMD_SERCOM1_I2C_SET_RESTART(void);
 
 uint08_t xDriver_SAMD_SERCOM1_I2C_PUT(uint08_t DATA);
-uint08_t xDriver_SAMD_SERCOM1_I2C_GET(uint08_t *DATA);
+uint01_t xDriver_SAMD_SERCOM1_I2C_GET(uint08_t *DATA);
 
-uint01_t xDriver_SAMD_SERCOM1_I2C_PUTS(uint08_t *DATA, uint08_t LENGTH);
-uint01_t xDriver_SAMD_SERCOM1_I2C_GETS(uint08_t *DATA, uint08_t LENGTH);
+uint01_t xDriver_SAMD_SERCOM1_I2C_PUTS(uint08_t *DATA, uint16_t LENGTH);
+uint01_t xDriver_SAMD_SERCOM1_I2C_GETS(uint08_t *DATA, uint16_t LENGTH);
 
 #endif	/* DRIVER_SAMD_SERCOM1_I2CM_H */
 

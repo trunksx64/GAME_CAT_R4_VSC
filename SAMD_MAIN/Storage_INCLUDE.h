@@ -17,6 +17,8 @@
 #include "Driver_SAMD_PM.h"
 #include "Driver_SAMD_SERCOM1_I2CM.h"
 #include "Driver_SAMD_SERCOM2_SPIM.h"
+#include "Driver_SAMD_SERCOM3_SPIM.h"
+#include "Driver_SAMD_SERCOM4_SPIM.h"
 #include "Driver_SAMD_SYSCTRL.h"
 
 /******************************************************************************/

@@ -18,7 +18,6 @@ const uint32_t GPIO_LEDS[2U][2U] = {
 
 /******************************************************************************/
 /* == Development Control Functions = Thread ==                               */
-
 /******************************************************************************/
 
 void vTask_CTRL_LEDC(void *pvParameters) {
@@ -39,7 +38,7 @@ void vTask_CTRL_LEDC(void *pvParameters) {
     /* Toggle ::: Toggle LED Check Hardware */
     xStream_LED_COMMAND(NUM_LED_BUSY, CMD_LED_TGL, 100U);
     /* Toggle ::: Toggle LED Check Hardware */
-    xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 100U);
+    xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 50U);
 
     /****************************************************************************/
     /* == Execution = Infinite Loop Task                                        */

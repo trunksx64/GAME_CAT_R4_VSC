@@ -113,7 +113,7 @@ uint08_t xDriver_SAMD_SERCOM1_I2C_GET_ERROR(void) {
 uint01_t xDriver_SAMD_SERCOM1_I2C_POLL(uint8_t ADDRESS) {
     /* Local ::: Variables */
     uint16_t TIMEOUT = UINT16_MAX;
-    uint01_t STATUS = 0U;
+    uint01_t STATUS_ACK = 0U;
 
     /* CLR ::: Ints Flags */
     SERCOM1_REGS->I2CM.SERCOM_INTFLAG = (SERCOM_I2CM_INTFLAG_MB(pdSET) | SERCOM_I2CM_INTFLAG_ERROR(pdSET));
@@ -126,14 +126,14 @@ uint01_t xDriver_SAMD_SERCOM1_I2C_POLL(uint8_t ADDRESS) {
     while (!(SERCOM1_REGS->I2CM.SERCOM_INTFLAG & SERCOM_I2CM_INTFLAG_MB(pdSET)) && (TIMEOUT--));
 
     /* GET ::: ACK from Slave Device */
-    STATUS = !!(SERCOM1_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_RXNACK(pdSET));
+    STATUS_ACK = !!(SERCOM1_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_RXNACK(pdSET));
 
     /* PUT ::: Stop Signal */
     SERCOM1_REGS->I2CM.SERCOM_CTRLB |= SERCOM_I2CM_CTRLB_CMD(3U);
     while (SERCOM1_REGS->I2CM.SERCOM_SYNCBUSY & SERCOM_I2CM_SYNCBUSY_SYSOP(pdSET)); // Wait Process Complete
 
     /* Return */
-    return (!STATUS);
+    return (!STATUS_ACK);
 }
 
 void vDriver_SAMD_SERCOM1_I2C_SET_ACK(uint01_t ACK) {
@@ -224,7 +224,7 @@ uint08_t xDriver_SAMD_SERCOM1_I2C_PUT(uint08_t DATA) {
     return (!!(SERCOM1_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_RXNACK(pdSET)));
 }
 
-uint08_t xDriver_SAMD_SERCOM1_I2C_GET(uint08_t *DATA) {
+uint01_t xDriver_SAMD_SERCOM1_I2C_GET(uint08_t *DATA) {
     /* Local ::: Variables */
     uint16_t TIMEOUT = UINT16_MAX;
 
@@ -253,7 +253,7 @@ uint08_t xDriver_SAMD_SERCOM1_I2C_GET(uint08_t *DATA) {
     return (pdSET);
 }
 
-uint01_t xDriver_SAMD_SERCOM1_I2C_PUTS(uint08_t *DATA, uint08_t LENGTH) {
+uint01_t xDriver_SAMD_SERCOM1_I2C_PUTS(uint08_t *DATA, uint16_t LENGTH) {
     /* Local ::: Variables */
     uint16_t TIMEOUT = UINT16_MAX;
 
@@ -295,7 +295,7 @@ uint01_t xDriver_SAMD_SERCOM1_I2C_PUTS(uint08_t *DATA, uint08_t LENGTH) {
     return (pdSET);
 }
 
-uint01_t xDriver_SAMD_SERCOM1_I2C_GETS(uint08_t *DATA, uint08_t LENGTH) {
+uint01_t xDriver_SAMD_SERCOM1_I2C_GETS(uint08_t *DATA, uint16_t LENGTH) {
     /* Local ::: Variables */
     uint16_t TIMEOUT = UINT16_MAX;
 

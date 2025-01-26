@@ -9,7 +9,7 @@
 /* == Definition ::: Configuration Macros :: Speed SERCOM SPI == */
 /******************************************************************************/
 #define SERCOM2_SPI_BAUD_RATE_CALC(F_OSC,F_CLK)	(uint08_t)((F_OSC/(2U*F_CLK))-1U)
-#define SERCOM2_SPI_BAUD_RATE					(500000UL)	// ((F_Clock/(2*F_Baud))-1)
+#define SERCOM2_SPI_BAUD_RATE					(100000UL)	// ((F_Clock/(2*F_Baud))-1)
 
 /******************************************************************************/
 /* == Prototype Configuration Hardware SAMC == */

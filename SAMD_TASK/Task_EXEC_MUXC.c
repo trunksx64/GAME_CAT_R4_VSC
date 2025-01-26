@@ -21,7 +21,7 @@ typedef enum {
 
 /******************************************************************************/
 
-void vTask_EXEC_MUXC(void *pvParameters) {
+void vTask_EXEC_MUXC (void *pvParameters) {
     /****************************************************************************/
     /** Local = Variables                                                       */
     /****************************************************************************/
@@ -41,7 +41,6 @@ void vTask_EXEC_MUXC(void *pvParameters) {
     uint08_t MUX_PORT = 0U;
     uint16_t SENSE_LIGTH = 0U;
     uint16_t SENSE_TEMP = 0U;
-    uint08_t CHECK = pdCLR;
 
     /****************************************************************************/
     /** Execution = Infinite Loop Task                                          */
@@ -81,8 +80,8 @@ void vTask_EXEC_MUXC(void *pvParameters) {
                 break;
         }
 
-        xControl_HAL_EEP_24CM01_CHECK();
-
+         vDriver_SAMD_SERCOM3_SPIM_PUT(0xAA);
+                 
         /**************************************************************************/
         /** Delay Until ::: Task Time Recurring                                   */
         /**************************************************************************/

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/GameCat_R4/debug/GameCat_R4.debug.elf">
+  <executable name="dist/GameCat_R4/debug/GAMECAT_R4_CODE.debug.elf">
     <memory name="program">
       <units>bytes</units>
       <length>262144</length>
-      <used>23638</used>
-      <free>238506</free>
+      <used>25886</used>
+      <free>236258</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
