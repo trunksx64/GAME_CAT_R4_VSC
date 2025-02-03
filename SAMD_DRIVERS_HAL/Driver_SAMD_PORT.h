@@ -167,6 +167,16 @@
 #define SRAM_SS_OUT(D)         (((!!D) ? (SRAM_SS_SET()) : (SRAM_SS_CLR())))
 
 /******************************************************************************/
+/* == Configuration Macros = GPIO = SRAM Outputs == */
+/******************************************************************************/
+
+/* Configuration ::: Ports(Pins) :: MUXA : (PA20) ------------------- */
+#define CANFD_SS_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA28)
+#define CANFD_SS_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA28)
+#define CANFD_SS_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA28)
+#define CANFD_SS_OUT(D)        (((!!D) ? (CANFD_SS_SET()) : (CANFD_SS_CLR())))
+
+/******************************************************************************/
 /* == Prototype Configuration Hardware SAMD :: GPIO == */
 /******************************************************************************/
 

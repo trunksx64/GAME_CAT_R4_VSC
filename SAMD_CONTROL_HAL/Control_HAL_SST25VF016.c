@@ -3,8 +3,6 @@
 /* Include ::: Header Drivers */
 #include "Driver_SAMD_PORT.h"
 #include "Driver_SAMD_SERCOM2_SPIM.h"
-/* Include ::: Header Storage */
-#include "Storage_DELAY.h"
 
 /******************************************************************************/
 /* == Configuration Macros = Defines Controls  == */

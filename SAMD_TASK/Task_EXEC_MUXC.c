@@ -80,8 +80,6 @@ void vTask_EXEC_MUXC (void *pvParameters) {
                 break;
         }
 
-         vDriver_SAMD_SERCOM3_SPIM_PUT(0xAA);
-                 
         /**************************************************************************/
         /** Delay Until ::: Task Time Recurring                                   */
         /**************************************************************************/

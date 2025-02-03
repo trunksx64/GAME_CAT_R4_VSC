@@ -7,12 +7,13 @@
 /******************************************************************************/
 /* == Configuration Macros = Eeprom 24XX04  == */
 /******************************************************************************/
-#define CONTROL_HAL_EEP_24CM01_DEVICE_WRITE               (uint08_t)(0xA0) // Address Write Data
-#define CONTROL_HAL_EEP_24CM01_DEVICE_READ                (uint08_t)(0xA1) // Address Read Data
-#define CONTROL_HAL_EEP_24CM01_PAGE_WRITE                 (uint16_t)(256U) // 256 Bytes for Page
-#define CONTROL_HAL_EEP_24CM01_BLOCK_SIZE                 (uint16_t)(512U) // 512 Bytes for Blocks
-#define CONTROL_HAL_EEP_24CM01_START                      (uint32_t)(0x00000) 
-#define CONTROL_HAL_EEP_24CM01_FINAL                      (uint32_t)(0x1FFFF)
+#define CONTROL_HAL_EEP_24CM01_ADDRESS      (uint08_t)(0xA0) // Address Write Data
+
+#define CONTROL_HAL_EEP_24CM01_PAGE_SIZE    (uint16_t)(256U)  // 256 Bytes for Page
+#define CONTROL_HAL_EEP_24CM01_BLOCK_SIZE   (uint16_t)(512U) // 512 Bytes for Blocks
+
+#define CONTROL_HAL_EEP_24CM01_DEVICE_START (uint32_t)(0x00000)
+#define CONTROL_HAL_EEP_24CM01_DEVICE_FINAL (uint32_t)(0x1FFFF)
 
 /******************************************************************************/
 /* == Prototype Configuration Functions == */

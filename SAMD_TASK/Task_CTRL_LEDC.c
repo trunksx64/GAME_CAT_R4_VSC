@@ -36,9 +36,9 @@ void vTask_CTRL_LEDC(void *pvParameters) {
     xStream_Led_Counter_t COUNTER_LED[sizeof (GPIO_LEDS) / sizeof (uint64_t)] = {0U}; // Control LEDS
 
     /* Toggle ::: Toggle LED Check Hardware */
-    xStream_LED_COMMAND(NUM_LED_BUSY, CMD_LED_TGL, 100U);
+    xStream_LED_COMMAND(NUM_LED_BUSY, CMD_LED_TGL, 50U);
     /* Toggle ::: Toggle LED Check Hardware */
-    xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 50U);
+    xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 100U);
 
     /****************************************************************************/
     /* == Execution = Infinite Loop Task                                        */
@@ -84,36 +84,36 @@ void vTask_CTRL_LEDC(void *pvParameters) {
         /** Loop ::: Control One Led Time                                         */
         /**************************************************************************/
 
-        for (uint08_t COUNTER = 0U; (COUNTER < (sizeof (COUNTER_LED) / sizeof (xStream_Led_Counter_t))); COUNTER++) {
+        for (uint08_t I_COUNT = 0U; (I_COUNT < (sizeof (COUNTER_LED) / sizeof (xStream_Led_Counter_t))); I_COUNT++) {
             /* Break ::: DEBUG */
             pdNOP();
 
             /* Control ::: LED Command Storage */
-            switch (COUNTER_LED[COUNTER].COMMAD) {
+            switch (COUNTER_LED[I_COUNT].COMMAD) {
                 case CMD_LED_CLR:
                     /* CLR ::: Current LED Loop */
-                    PORT_REGS->GROUP[GPIO_LEDS[COUNTER][0U]].PORT_OUTCLR = GPIO_LEDS[COUNTER][1U];
+                    PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
                     break;
                 case CMD_LED_SET:
                     /* SET ::: Current LED Loop */
-                    PORT_REGS->GROUP[GPIO_LEDS[COUNTER][0U]].PORT_OUTSET = GPIO_LEDS[COUNTER][1U];
+                    PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTSET = GPIO_LEDS[I_COUNT][1U];
                     break;
                 case CMD_LED_TGL:
                     /* CHK ::: Overflow Time */
-                    if ((xTaskGetTickCount() - COUNTER_LED[COUNTER].TIME_LAST) >= (COUNTER_LED[COUNTER].TIME_OVERFLOW / 2U)) {
+                    if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= (COUNTER_LED[I_COUNT].TIME_OVERFLOW / 2U)) {
                         /* UDP ::: Last Time */
-                        COUNTER_LED[COUNTER].TIME_LAST = xTaskGetTickCount();
+                        COUNTER_LED[I_COUNT].TIME_LAST = xTaskGetTickCount();
                         /* TGL ::: Current LED Loop */
-                        PORT_REGS->GROUP[GPIO_LEDS[COUNTER][0U]].PORT_OUTTGL = GPIO_LEDS[COUNTER][1U];
+                        PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTTGL = GPIO_LEDS[I_COUNT][1U];
                     }
                     break;
                 case CMD_LED_TMR:
                     /* CHK ::: LED Enabled */
-                    if (!!(PORT_REGS->GROUP[GPIO_LEDS[COUNTER][0U]].PORT_OUTCLR & GPIO_LEDS[COUNTER][1U])) {
+                    if (!!(PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR & GPIO_LEDS[I_COUNT][1U])) {
                         /* CHK ::: Overflow Time */
-                        if ((xTaskGetTickCount() - COUNTER_LED[COUNTER].TIME_LAST) >= COUNTER_LED[COUNTER].TIME_OVERFLOW) {
+                        if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= COUNTER_LED[I_COUNT].TIME_OVERFLOW) {
                             /* CLR ::: Variable Output */
-                            PORT_REGS->GROUP[GPIO_LEDS[COUNTER][0U]].PORT_OUTCLR = GPIO_LEDS[COUNTER][1U];
+                            PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
                         }
                     }
                     break;

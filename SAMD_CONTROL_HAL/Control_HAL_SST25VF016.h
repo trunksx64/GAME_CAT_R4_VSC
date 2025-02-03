@@ -3,6 +3,7 @@
 
 /* Configuration Main Settings */
 #include "Storage_CLASS.h"
+#include "Storage_DELAY.h"
 
 /******************************************************************************/
 /* == Configuration Macros = UID Serial Flash Memory == */

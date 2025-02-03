@@ -1,13 +1,13 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
-                              /tmp/ccfIGHhz.o (__pic32c_data_initialization)
+                              /tmp/ccQqh8Ft.o (__pic32c_data_initialization)
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
                               build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o (memcpy)
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
                               build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o (memset)
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
-                              /tmp/ccfIGHhz.o (__libc_init_array)
+                              /tmp/ccQqh8Ft.o (__libc_init_array)
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
                               /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o) (__progname_full)
 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
@@ -47,37 +47,38 @@ section                    address  length [bytes]      (dec)  Description
 .text                       0x5c70          0x15e         350  App's exec code 
 .text.Dummy_Handler         0x5dce            0x2           2   
 .text                       0x5dd0           0xf4         244  App's exec code 
-.text                       0x5ec4           0xbc         188  App's exec code 
-.dinit                      0x5f80           0xa0         160   
-.text                       0x6020           0x98         152  App's exec code 
-.text                       0x60b8           0x8c         140  App's exec code 
-.text                       0x6144           0x78         120  App's exec code 
-.text                       0x61bc           0x74         116  App's exec code 
-.text.__libc_start_init     0x6230           0x5c          92   
-.text.Reset_Handler         0x628c           0x54          84   
-.text                       0x62e0           0x4a          74  App's exec code 
-.text.__dummy               0x632a            0x2           2   
-.text                       0x632c           0x48          72  App's exec code 
-.text                       0x6374           0x38          56  App's exec code 
-.text.__pic32c_data_ini     0x63ac           0x34          52   
-.text                       0x63e0           0x2c          44  App's exec code 
-.rodata                     0x640c           0x24          36  Read-only const 
-.rodata                     0x6430           0x24          36  Read-only const 
-.text                       0x6454           0x20          32  App's exec code 
-.text.__dinit_copy          0x6474           0x1e          30   
-.RamFunc                    0x6492           0x1a          26   
-.rodata                     0x64ac           0x14          20  Read-only const 
-.text.memcpy                0x64c0           0x14          20   
-.text.memset                0x64d4           0x14          20   
-.text.__dinit_clear         0x64e8           0x12          18   
-.rodata                     0x64fc           0x10          16  Read-only const 
-.rodata                     0x650c            0x8           8  Read-only const 
-.rodata                     0x6514            0x4           4  Read-only const 
-.text.__dummy_decompres     0x6518            0x4           4   
-.text                       0x651c            0x4           4  App's exec code 
-      Total ROM used  :      0x651e       25886  9.9% of 0x40000
+.text                       0x5ec4           0xb6         182  App's exec code 
+.text.__dummy               0x5f7a            0x2           2   
+.text                       0x5f7c           0xac         172  App's exec code 
+.dinit                      0x6028           0xa0         160   
+.text                       0x60c8           0x98         152  App's exec code 
+.text                       0x6160           0x8c         140  App's exec code 
+.text                       0x61ec           0x78         120  App's exec code 
+.text                       0x6264           0x74         116  App's exec code 
+.text.__libc_start_init     0x62d8           0x5c          92   
+.text.Reset_Handler         0x6334           0x54          84   
+.text                       0x6388           0x4e          78  App's exec code 
+.text                       0x63d8           0x48          72  App's exec code 
+.text                       0x6420           0x38          56  App's exec code 
+.text.__pic32c_data_ini     0x6458           0x34          52   
+.text                       0x648c           0x2c          44  App's exec code 
+.rodata                     0x64b8           0x24          36  Read-only const 
+.rodata                     0x64dc           0x24          36  Read-only const 
+.text                       0x6500           0x20          32  App's exec code 
+.text.__dinit_copy          0x6520           0x1e          30   
+.RamFunc                    0x653e           0x1a          26   
+.rodata                     0x6558           0x14          20  Read-only const 
+.text.memcpy                0x656c           0x14          20   
+.text.memset                0x6580           0x14          20   
+.text.__dinit_clear         0x6594           0x12          18   
+.rodata                     0x65a8           0x10          16  Read-only const 
+.rodata                     0x65b8            0x8           8  Read-only const 
+.rodata                     0x65c0            0x4           4  Read-only const 
+.text.__dummy_decompres     0x65c4            0x4           4   
+.text                       0x65c8            0x4           4  App's exec code 
+      Total ROM used  :      0x65c8       26056  9.9% of 0x40000
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x651e       25886  9.9% of 0x40000
+         Total Program Memory used  :      0x65c8       26056  9.9% of 0x40000
         --------------------------------------------------------------------------
 
 
@@ -131,8 +132,9 @@ Microchip PIC32 Memory-Usage Report By Module
          516           0           0         516         204    Driver_SAMD_ADC.o         build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
          350           0           0         350         15e    list.o                    build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
          280           0          36         316         13c    Settings_TASKS.o          build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
-         262           0           0         262         106    ccfIGHhz.o                /tmp/ccfIGHhz.o
-         188           0           0         188          bc    Task_EXEC_MUXC.o          build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+         262           0           0         262         106    ccQqh8Ft.o                /tmp/ccQqh8Ft.o
+         182           0           0         182          b6    Task_EXEC_MUXC.o          build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+         172           0           0         172          ac    Control_HAL_MCP2518FD.o   build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
          160           0           0         160          a0    data_init                 data_init
          152           0           0         152          98    Driver_SAMD_GCLK.o        build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
          140           0           0         140          8c    _udivsi3.o                libgcc.a
@@ -142,7 +144,7 @@ Microchip PIC32 Memory-Usage Report By Module
           94           0           0          94          5e    __libc_start_main.o       libg-musl.a
            0           0          80          80          50    libc.o                    libg-musl.a
           76           0           4          80          50    data_init.o               libpic32c.a
-          74           0           0          74          4a    Function_MAIN.o           build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+          78           0           0          78          4e    Function_MAIN.o           build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
           56           0           0          56          38    Driver_SAMD_PM.o          build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
           44           0           0          44          2c    Interruption_TRAP.o       build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
           32           0           0          32          20    Task_CTRL_CANC.o          build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
@@ -157,7 +159,7 @@ Microchip PIC32 Memory-Usage Report By Module
            4           0           0           4           4    _dvmd_tls.o               libgcc.a
            0           0           4           4           4    __environ.o               libg-musl.a
 --------------------------------------------------------------------------------
-       25886          16        4668       30570        776a    dist/GameCat_R4/debug/GAMECAT_R4_CODE.debug.elf
+       26056          16        4668       30740        7814    dist/GameCat_R4/debug/GAMECAT_R4_CODE.debug.elf
 
 
 Discarded input sections
@@ -228,6 +230,7 @@ LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
 LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
 LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
 LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
+LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
@@ -235,6 +238,8 @@ LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
 LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
 LOAD build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
 LOAD build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
 LOAD build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
@@ -250,15 +255,12 @@ LOAD build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
 LOAD build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
 LOAD build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
 LOAD build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
-LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
-LOAD build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
-LOAD build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
                 0x0000000000000001                __ICD2RAM = 0x1
                 0x0000000000000001                __MPLAB_DEBUG = 0x1
                 0x0000000000000001                __DEBUG = 0x1
                 0x0000000000000080                _min_heap_size = 0x80
-LOAD /tmp/ccfIGHhz.o
+LOAD /tmp/ccQqh8Ft.o
 START GROUP
 LOAD /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a
 LOAD /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a
@@ -287,7 +289,7 @@ LOAD /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nof
                 0x0000000000000000                _sfixed = .
  *(.vectors .vectors.* .vectors_default .vectors_default.*)
  .vectors.default
-                0x0000000000000000       0xb0 /tmp/ccfIGHhz.o
+                0x0000000000000000       0xb0 /tmp/ccQqh8Ft.o
                 0x0000000000000000                exception_table
  *(.isr_vector)
  *(.reset*)
@@ -378,81 +380,81 @@ LOAD stack
  .ARM.attributes
                 0x00000000000000ce       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
  .ARM.attributes
-                0x00000000000000fa       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+                0x00000000000000fa       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
  .ARM.attributes
-                0x0000000000000126       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+                0x0000000000000126       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
  .ARM.attributes
-                0x0000000000000152       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+                0x0000000000000152       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
  .ARM.attributes
-                0x000000000000017e       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+                0x000000000000017e       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
  .ARM.attributes
-                0x00000000000001aa       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+                0x00000000000001aa       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
  .ARM.attributes
-                0x00000000000001d6       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+                0x00000000000001d6       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
  .ARM.attributes
-                0x0000000000000202       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+                0x0000000000000202       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
  .ARM.attributes
-                0x000000000000022e       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+                0x000000000000022e       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
  .ARM.attributes
-                0x000000000000025a       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+                0x000000000000025a       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
  .ARM.attributes
-                0x0000000000000286       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+                0x0000000000000286       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
  .ARM.attributes
-                0x00000000000002b2       0x32 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+                0x00000000000002b2       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
  .ARM.attributes
-                0x00000000000002e4       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+                0x00000000000002de       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
  .ARM.attributes
-                0x0000000000000310       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+                0x000000000000030a       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
  .ARM.attributes
-                0x000000000000033c       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+                0x0000000000000336       0x32 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
  .ARM.attributes
-                0x0000000000000368       0x2c build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+                0x0000000000000368       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
  .ARM.attributes
-                0x0000000000000394       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+                0x0000000000000394       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
  .ARM.attributes
-                0x00000000000003c0       0x2c build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+                0x00000000000003c0       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
  .ARM.attributes
-                0x00000000000003ec       0x2c build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+                0x00000000000003ec       0x2c build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
  .ARM.attributes
-                0x0000000000000418       0x2c build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+                0x0000000000000418       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
  .ARM.attributes
-                0x0000000000000444       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+                0x0000000000000444       0x2c build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
  .ARM.attributes
-                0x0000000000000470       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+                0x0000000000000470       0x2c build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
  .ARM.attributes
-                0x000000000000049c       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+                0x000000000000049c       0x2c build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
  .ARM.attributes
-                0x00000000000004c8       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+                0x00000000000004c8       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
  .ARM.attributes
-                0x00000000000004f4       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+                0x00000000000004f4       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
  .ARM.attributes
-                0x0000000000000520       0x32 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+                0x0000000000000520       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
  .ARM.attributes
-                0x0000000000000552       0x2c /tmp/ccfIGHhz.o
+                0x000000000000054c       0x2c /tmp/ccQqh8Ft.o
  .ARM.attributes
-                0x000000000000057e       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+                0x0000000000000578       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
  .ARM.attributes
-                0x00000000000005aa       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+                0x00000000000005a4       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
  .ARM.attributes
-                0x00000000000005d8       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+                0x00000000000005d2       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
  .ARM.attributes
-                0x0000000000000606       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+                0x0000000000000600       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
  .ARM.attributes
-                0x0000000000000634       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+                0x000000000000062e       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
  .ARM.attributes
-                0x0000000000000662       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+                0x000000000000065c       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
  .ARM.attributes
-                0x0000000000000690       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x000000000000068a       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x00000000000006ae       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000000006a8       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000000000006cc       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtend.o
+                0x00000000000006c6       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtend.o
  .ARM.attributes
-                0x00000000000006f8       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtn.o
+                0x00000000000006f2       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtn.o
  .ARM.attributes
-                0x0000000000000716       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+                0x0000000000000710       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
  .ARM.attributes
-                0x0000000000000742       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+                0x000000000000073c       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
 .comment        0x0000000000000000       0x2b
  .comment       0x0000000000000000       0x2b /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -461,6 +463,7 @@ LOAD stack
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
+ .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
@@ -468,6 +471,8 @@ LOAD stack
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
@@ -483,10 +488,7 @@ LOAD stack
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
  .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .comment       0x000000000000002b       0x2c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
- .comment       0x000000000000002b       0x2c /tmp/ccfIGHhz.o
+ .comment       0x000000000000002b       0x2c /tmp/ccQqh8Ft.o
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
@@ -497,123 +499,126 @@ LOAD stack
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_info     0x0000000000000000     0xb311
+.debug_info     0x0000000000000000     0xb61b
  .debug_info    0x0000000000000000      0x443 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_info    0x0000000000000443      0x6ba build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_info    0x0000000000000afd      0x516 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .debug_info    0x0000000000001013      0x2b9 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_info    0x00000000000012cc      0x316 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_info    0x00000000000015e2      0x133 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_info    0x0000000000001715      0x39d build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_info    0x0000000000001ab2      0x5aa build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_info    0x000000000000205c      0x410 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_info    0x000000000000246c      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_info    0x0000000000003350     0x1048 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_info    0x0000000000004398      0xf05 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_info    0x000000000000529d      0x681 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_info    0x000000000000591e      0x2b8 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_info    0x0000000000005bd6       0x79 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
- .debug_info    0x0000000000005c4f     0x12b0 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_info    0x0000000000006eff      0x4bc build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_info    0x00000000000073bb      0x2a9 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_info    0x0000000000007664      0x136 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_info    0x000000000000779a       0x9c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_info    0x0000000000007836       0xbe build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_info    0x00000000000078f4      0x341 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_info    0x0000000000007c35      0x2a1 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_info    0x0000000000007ed6      0x57b build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_info    0x0000000000008451       0xd2 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_info    0x0000000000008523      0x2d8 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_info    0x00000000000087fb      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_info    0x00000000000096df      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_info    0x000000000000a5c3      0x47f /tmp/ccfIGHhz.o
- .debug_info    0x000000000000aa42       0x54 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_info    0x000000000000aa96       0xed /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_info    0x000000000000ab83       0xbb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_info    0x000000000000ac3e      0x2fb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_info    0x000000000000af39      0x276 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
- .debug_info    0x000000000000b1af       0x97 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
- .debug_info    0x000000000000b246       0x26 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_info    0x000000000000b26c       0x26 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000000000000b292       0x3f /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
- .debug_info    0x000000000000b2d1       0x40 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_info    0x00000000000012cc      0x30a build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_info    0x00000000000015d6      0x316 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_info    0x00000000000018ec      0x133 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_info    0x0000000000001a1f      0x39d build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_info    0x0000000000001dbc      0x5aa build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_info    0x0000000000002366      0x410 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_info    0x0000000000002776      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_info    0x000000000000365a     0x1048 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_info    0x00000000000046a2      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_info    0x0000000000005586      0xee4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_info    0x000000000000646a      0xf05 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_info    0x000000000000736f      0x681 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_info    0x00000000000079f0      0x2b8 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_info    0x0000000000007ca8       0x79 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+ .debug_info    0x0000000000007d21     0x12b0 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_info    0x0000000000008fd1      0x4bc build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_info    0x000000000000948d      0x2a9 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_info    0x0000000000009736      0x136 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_info    0x000000000000986c       0x9c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_info    0x0000000000009908       0xbe build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_info    0x00000000000099c6      0x341 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_info    0x0000000000009d07      0x2a1 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_info    0x0000000000009fa8      0x57b build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_info    0x000000000000a523       0xd2 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_info    0x000000000000a5f5      0x2d8 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_info    0x000000000000a8cd      0x47f /tmp/ccQqh8Ft.o
+ .debug_info    0x000000000000ad4c       0x54 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_info    0x000000000000ada0       0xed /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_info    0x000000000000ae8d       0xbb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_info    0x000000000000af48      0x2fb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_info    0x000000000000b243      0x276 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+ .debug_info    0x000000000000b4b9       0x97 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+ .debug_info    0x000000000000b550       0x26 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_info    0x000000000000b576       0x26 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000000b59c       0x3f /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_info    0x000000000000b5db       0x40 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_abbrev   0x0000000000000000     0x2740
+.debug_abbrev   0x0000000000000000     0x2856
  .debug_abbrev  0x0000000000000000      0x146 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_abbrev  0x0000000000000146      0x1d5 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_abbrev  0x000000000000031b      0x11f build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .debug_abbrev  0x000000000000043a       0xc8 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_abbrev  0x0000000000000502       0xa2 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_abbrev  0x00000000000005a4       0x90 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_abbrev  0x0000000000000634       0xc2 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_abbrev  0x00000000000006f6      0x102 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_abbrev  0x00000000000007f8       0xb1 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_abbrev  0x00000000000008a9      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_abbrev  0x0000000000000a9e      0x26d build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_abbrev  0x0000000000000d0b      0x1c1 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_abbrev  0x0000000000000ecc      0x15e build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_abbrev  0x000000000000102a       0xf7 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_abbrev  0x0000000000001121       0x26 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
- .debug_abbrev  0x0000000000001147      0x252 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_abbrev  0x0000000000001399      0x19f build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_abbrev  0x0000000000001538      0x1bf build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_abbrev  0x00000000000016f7       0xdb build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_abbrev  0x00000000000017d2       0x46 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_abbrev  0x0000000000001818       0x6d build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_abbrev  0x0000000000001885      0x116 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_abbrev  0x000000000000199b       0xdf build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_abbrev  0x0000000000001a7a      0x17e build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_abbrev  0x0000000000001bf8       0x8b build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_abbrev  0x0000000000001c83      0x10d build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_abbrev  0x0000000000001d90      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_abbrev  0x0000000000001f85      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_abbrev  0x000000000000217a      0x138 /tmp/ccfIGHhz.o
- .debug_abbrev  0x00000000000022b2       0x44 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_abbrev  0x00000000000022f6       0xbb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_abbrev  0x00000000000023b1       0xa2 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_abbrev  0x0000000000002453      0x133 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_abbrev  0x0000000000002586       0xd4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
- .debug_abbrev  0x000000000000265a       0x62 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
- .debug_abbrev  0x00000000000026bc       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_abbrev  0x00000000000026d0       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x00000000000026e4       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
- .debug_abbrev  0x0000000000002712       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_abbrev  0x0000000000000502      0x116 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_abbrev  0x0000000000000618       0xa2 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_abbrev  0x00000000000006ba       0x90 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_abbrev  0x000000000000074a       0xc2 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_abbrev  0x000000000000080c      0x102 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_abbrev  0x000000000000090e       0xb1 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_abbrev  0x00000000000009bf      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_abbrev  0x0000000000000bb4      0x26d build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_abbrev  0x0000000000000e21      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_abbrev  0x0000000000001016      0x1f5 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_abbrev  0x000000000000120b      0x1c1 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_abbrev  0x00000000000013cc      0x15e build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_abbrev  0x000000000000152a       0xf7 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_abbrev  0x0000000000001621       0x26 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+ .debug_abbrev  0x0000000000001647      0x252 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_abbrev  0x0000000000001899      0x19f build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_abbrev  0x0000000000001a38      0x1bf build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_abbrev  0x0000000000001bf7       0xdb build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_abbrev  0x0000000000001cd2       0x46 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_abbrev  0x0000000000001d18       0x6d build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_abbrev  0x0000000000001d85      0x116 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_abbrev  0x0000000000001e9b       0xdf build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_abbrev  0x0000000000001f7a      0x17e build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_abbrev  0x00000000000020f8       0x8b build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_abbrev  0x0000000000002183      0x10d build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_abbrev  0x0000000000002290      0x138 /tmp/ccQqh8Ft.o
+ .debug_abbrev  0x00000000000023c8       0x44 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_abbrev  0x000000000000240c       0xbb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_abbrev  0x00000000000024c7       0xa2 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_abbrev  0x0000000000002569      0x133 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_abbrev  0x000000000000269c       0xd4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+ .debug_abbrev  0x0000000000002770       0x62 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+ .debug_abbrev  0x00000000000027d2       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00000000000027e6       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00000000000027fa       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_abbrev  0x0000000000002828       0x2e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_loc      0x0000000000000000     0x2b1d
+.debug_loc      0x0000000000000000     0x2be5
  .debug_loc     0x0000000000000000       0x38 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_loc     0x0000000000000038      0x49c build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_loc     0x00000000000004d4      0x230 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .debug_loc     0x0000000000000704      0x146 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_loc     0x000000000000084a       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_loc     0x0000000000000876       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_loc     0x00000000000008a2       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_loc     0x00000000000008ce       0x70 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_loc     0x000000000000093e       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_loc     0x000000000000096a      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_loc     0x0000000000000ae6      0x2b4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_loc     0x0000000000000d9a      0x5e9 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_loc     0x0000000000001383      0x230 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_loc     0x00000000000015b3      0x118 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_loc     0x00000000000016cb      0x840 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_loc     0x0000000000001f0b      0x200 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_loc     0x000000000000210b      0x1dc build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_loc     0x00000000000022e7       0x90 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_loc     0x0000000000002377       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_loc     0x00000000000023a3       0x38 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_loc     0x00000000000023db       0x38 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_loc     0x0000000000002413       0xe8 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_loc     0x00000000000024fb       0x3a build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_loc     0x0000000000002535       0x38 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_loc     0x000000000000256d       0x38 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_loc     0x00000000000025a5      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_loc     0x0000000000002721      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_loc     0x000000000000289d       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_loc     0x00000000000028b1      0x12d /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_loc     0x00000000000029de       0xcd /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_loc     0x0000000000002aab       0x5e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_loc     0x0000000000002b09       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_loc     0x000000000000084a       0xc8 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_loc     0x0000000000000912       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_loc     0x000000000000093e       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_loc     0x000000000000096a       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_loc     0x0000000000000996       0x70 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_loc     0x0000000000000a06       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_loc     0x0000000000000a32      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_loc     0x0000000000000bae      0x2b4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_loc     0x0000000000000e62      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_loc     0x0000000000000fde      0x17c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_loc     0x000000000000115a      0x5e9 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_loc     0x0000000000001743      0x230 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_loc     0x0000000000001973      0x118 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_loc     0x0000000000001a8b      0x840 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_loc     0x00000000000022cb      0x200 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_loc     0x00000000000024cb      0x1dc build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_loc     0x00000000000026a7       0x90 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_loc     0x0000000000002737       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_loc     0x0000000000002763       0x38 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_loc     0x000000000000279b       0x38 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_loc     0x00000000000027d3       0xe8 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_loc     0x00000000000028bb       0x3a build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_loc     0x00000000000028f5       0x38 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_loc     0x000000000000292d       0x38 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_loc     0x0000000000002965       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_loc     0x0000000000002979      0x12d /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_loc     0x0000000000002aa6       0xcd /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_loc     0x0000000000002b73       0x5e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_loc     0x0000000000002bd1       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_aranges  0x0000000000000000      0x4e0
+.debug_aranges  0x0000000000000000      0x500
  .debug_aranges
                 0x0000000000000000       0x20 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_aranges
@@ -623,200 +628,203 @@ LOAD stack
  .debug_aranges
                 0x0000000000000060       0x20 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
  .debug_aranges
-                0x0000000000000080       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+                0x0000000000000080       0x20 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
  .debug_aranges
-                0x00000000000000a0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+                0x00000000000000a0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
  .debug_aranges
-                0x00000000000000c0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+                0x00000000000000c0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
  .debug_aranges
-                0x00000000000000e0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+                0x00000000000000e0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
  .debug_aranges
-                0x0000000000000100       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+                0x0000000000000100       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
  .debug_aranges
-                0x0000000000000120       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+                0x0000000000000120       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
  .debug_aranges
-                0x0000000000000140       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+                0x0000000000000140       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
  .debug_aranges
-                0x0000000000000160       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+                0x0000000000000160       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
  .debug_aranges
-                0x0000000000000180       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+                0x0000000000000180       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
  .debug_aranges
-                0x00000000000001a0       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+                0x00000000000001a0       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
  .debug_aranges
-                0x00000000000001c0       0x18 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+                0x00000000000001c0       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
  .debug_aranges
-                0x00000000000001d8       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+                0x00000000000001e0       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
  .debug_aranges
-                0x00000000000001f8       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+                0x0000000000000200       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
  .debug_aranges
-                0x0000000000000218       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+                0x0000000000000220       0x18 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
  .debug_aranges
-                0x0000000000000238       0x20 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+                0x0000000000000238       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
  .debug_aranges
-                0x0000000000000258       0x20 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+                0x0000000000000258       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
  .debug_aranges
-                0x0000000000000278       0x20 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+                0x0000000000000278       0x20 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
  .debug_aranges
-                0x0000000000000298       0x20 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+                0x0000000000000298       0x20 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
  .debug_aranges
-                0x00000000000002b8       0x20 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+                0x00000000000002b8       0x20 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
  .debug_aranges
-                0x00000000000002d8       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+                0x00000000000002d8       0x20 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
  .debug_aranges
-                0x00000000000002f8       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+                0x00000000000002f8       0x20 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
  .debug_aranges
-                0x0000000000000318       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+                0x0000000000000318       0x20 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
  .debug_aranges
-                0x0000000000000338       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+                0x0000000000000338       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
  .debug_aranges
-                0x0000000000000358       0x20 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+                0x0000000000000358       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
  .debug_aranges
-                0x0000000000000378       0x28 /tmp/ccfIGHhz.o
+                0x0000000000000378       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
  .debug_aranges
-                0x00000000000003a0       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+                0x0000000000000398       0x28 /tmp/ccQqh8Ft.o
  .debug_aranges
-                0x00000000000003c8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+                0x00000000000003c0       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
  .debug_aranges
-                0x00000000000003e8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+                0x00000000000003e8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
  .debug_aranges
-                0x0000000000000408       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+                0x0000000000000408       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
  .debug_aranges
-                0x0000000000000430       0x18 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+                0x0000000000000428       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
  .debug_aranges
-                0x0000000000000448       0x18 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+                0x0000000000000450       0x18 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
  .debug_aranges
-                0x0000000000000460       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x0000000000000468       0x18 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
  .debug_aranges
-                0x0000000000000480       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000000000480       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_aranges
-                0x00000000000004a0       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+                0x00000000000004a0       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_aranges
-                0x00000000000004c0       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+                0x00000000000004c0       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_aranges
+                0x00000000000004e0       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_line     0x0000000000000000     0x5179
+.debug_line     0x0000000000000000     0x52b8
  .debug_line    0x0000000000000000      0x1d1 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_line    0x00000000000001d1      0x3c1 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_line    0x0000000000000592      0x23e build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .debug_line    0x00000000000007d0      0x1cb build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_line    0x000000000000099b      0x14a build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_line    0x0000000000000ae5      0x163 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_line    0x0000000000000c48      0x121 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_line    0x0000000000000d69      0x23c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_line    0x0000000000000fa5      0x2dc build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_line    0x0000000000001281      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_line    0x00000000000015f4      0x612 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_line    0x0000000000001c06      0x7f9 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_line    0x00000000000023ff      0x338 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_line    0x0000000000002737      0x19a build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_line    0x00000000000028d1       0x1d build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
- .debug_line    0x00000000000028ee      0x80a build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_line    0x00000000000030f8      0x395 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_line    0x000000000000348d      0x237 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_line    0x00000000000036c4      0x165 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_line    0x0000000000003829       0x5e build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_line    0x0000000000003887       0x90 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_line    0x0000000000003917      0x17b build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_line    0x0000000000003a92      0x15c build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_line    0x0000000000003bee      0x2ce build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_line    0x0000000000003ebc       0xca build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_line    0x0000000000003f86      0x149 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_line    0x00000000000040cf      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_line    0x0000000000004442      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_line    0x00000000000047b5        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
- .debug_line    0x00000000000047b5      0x1c9 /tmp/ccfIGHhz.o
- .debug_line    0x000000000000497e       0x8e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_line    0x0000000000004a0c       0xee /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_line    0x0000000000004afa       0xe3 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_line    0x0000000000004bdd      0x1bc /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_line    0x0000000000004d99       0xb5 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
- .debug_line    0x0000000000004e4e       0xfb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
- .debug_line    0x0000000000004f49       0xa8 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_line    0x0000000000004ff1       0x91 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000005082       0x6f /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
- .debug_line    0x00000000000050f1       0x88 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_line    0x000000000000099b      0x141 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_line    0x0000000000000adc      0x14a build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_line    0x0000000000000c26      0x163 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_line    0x0000000000000d89      0x121 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_line    0x0000000000000eaa      0x23c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_line    0x00000000000010e6      0x2dc build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_line    0x00000000000013c2      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_line    0x0000000000001735      0x612 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_line    0x0000000000001d47      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_line    0x00000000000020ba      0x373 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_line    0x000000000000242d      0x7f9 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_line    0x0000000000002c26      0x338 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_line    0x0000000000002f5e      0x19a build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_line    0x00000000000030f8       0x1d build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+ .debug_line    0x0000000000003115      0x80a build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_line    0x000000000000391f      0x395 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_line    0x0000000000003cb4      0x237 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_line    0x0000000000003eeb      0x165 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_line    0x0000000000004050       0x5f build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_line    0x00000000000040af       0x90 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_line    0x000000000000413f      0x17b build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_line    0x00000000000042ba      0x15c build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_line    0x0000000000004416      0x2ce build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_line    0x00000000000046e4       0xca build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_line    0x00000000000047ae      0x146 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_line    0x00000000000048f4      0x1c9 /tmp/ccQqh8Ft.o
+ .debug_line    0x0000000000004abd       0x8e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_line    0x0000000000004b4b       0xee /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_line    0x0000000000004c39       0xe3 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_line    0x0000000000004d1c      0x1bc /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_line    0x0000000000004ed8       0xb5 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+ .debug_line    0x0000000000004f8d       0xfb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+ .debug_line    0x0000000000005088       0xa8 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_line    0x0000000000005130       0x91 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00000000000051c1       0x6f /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_line    0x0000000000005230       0x88 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_str      0x0000000000000000     0xa856
+.debug_str      0x0000000000000000     0xaa7c
  .debug_str     0x0000000000000000      0x3d6 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_str     0x00000000000003d6      0x769 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_str     0x0000000000000b3f      0x48a build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
- .debug_str     0x0000000000000fc9      0x36e build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_str     0x0000000000001337      0x42c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_str     0x0000000000001763      0x2cf build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_str     0x0000000000001a32      0x3f0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_str     0x0000000000001e22      0x551 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_str     0x0000000000002373      0x40f build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_str     0x0000000000002782      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_str     0x0000000000002f71      0x8ce build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_str     0x000000000000383f      0x857 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_str     0x0000000000004096      0x590 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_str     0x0000000000004626      0x375 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_str     0x000000000000499b      0x23f build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
- .debug_str     0x0000000000004bda      0xb6a build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_str     0x0000000000005744      0x55a build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_str     0x0000000000005c9e      0x3e8 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_str     0x0000000000006086      0x2b4 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_str     0x000000000000633a      0x247 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_str     0x0000000000006581      0x260 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_str     0x00000000000067e1      0x48a build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_str     0x0000000000006c6b      0x422 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_str     0x000000000000708d      0x5bf build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_str     0x000000000000764c      0x286 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_str     0x00000000000078d2      0x36d build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_str     0x0000000000007c3f      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_str     0x000000000000842e      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_str     0x0000000000008c1d      0x1bb build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
- .debug_str     0x0000000000008dd8      0x5d5 /tmp/ccfIGHhz.o
- .debug_str     0x00000000000093ad      0x1eb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_str     0x0000000000009598      0x225 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_str     0x00000000000097bd      0x211 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_str     0x00000000000099ce      0x3ca /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_str     0x0000000000009d98      0x335 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
- .debug_str     0x000000000000a0cd      0x235 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
- .debug_str     0x000000000000a302       0xd6 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_str     0x000000000000a3d8       0xd6 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x000000000000a4ae      0x1d5 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
- .debug_str     0x000000000000a683      0x1d3 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_str     0x0000000000000fc9      0x375 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
+ .debug_str     0x000000000000133e      0x3da build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_str     0x0000000000001718      0x42c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_str     0x0000000000001b44      0x2cf build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_str     0x0000000000001e13      0x3f0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_str     0x0000000000002203      0x551 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_str     0x0000000000002754      0x40f build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_str     0x0000000000002b63      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_str     0x0000000000003352      0x8ce build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_str     0x0000000000003c20      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_str     0x000000000000440f      0x7ef build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_str     0x0000000000004bfe      0x857 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_str     0x0000000000005455      0x590 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_str     0x00000000000059e5      0x375 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_str     0x0000000000005d5a      0x23f build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
+ .debug_str     0x0000000000005f99      0xb6a build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_str     0x0000000000006b03      0x55a build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_str     0x000000000000705d      0x3e8 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_str     0x0000000000007445      0x2b4 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_str     0x00000000000076f9      0x247 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_str     0x0000000000007940      0x260 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_str     0x0000000000007ba0      0x48a build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_str     0x000000000000802a      0x422 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_str     0x000000000000844c      0x5bf build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_str     0x0000000000008a0b      0x286 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_str     0x0000000000008c91      0x36d build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_str     0x0000000000008ffe      0x5d5 /tmp/ccQqh8Ft.o
+ .debug_str     0x00000000000095d3      0x1eb /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_str     0x00000000000097be      0x225 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_str     0x00000000000099e3      0x211 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_str     0x0000000000009bf4      0x3ca /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_str     0x0000000000009fbe      0x335 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(libc.o)
+ .debug_str     0x000000000000a2f3      0x235 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__environ.o)
+ .debug_str     0x000000000000a528       0xd6 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_str     0x000000000000a5fe       0xd6 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000000000000a6d4      0x1d5 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_str     0x000000000000a8a9      0x1d3 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_frame    0x0000000000000000     0x1b10
+.debug_frame    0x0000000000000000     0x1b98
  .debug_frame   0x0000000000000000       0x30 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
  .debug_frame   0x0000000000000030      0x2d8 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.o
  .debug_frame   0x0000000000000308      0x150 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_23K256.o
  .debug_frame   0x0000000000000458       0xd0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
- .debug_frame   0x0000000000000528       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
- .debug_frame   0x0000000000000554       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
- .debug_frame   0x0000000000000580       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
- .debug_frame   0x00000000000005ac       0x50 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
- .debug_frame   0x00000000000005fc       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
- .debug_frame   0x0000000000000628       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
- .debug_frame   0x0000000000000714      0x1a4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
- .debug_frame   0x00000000000008b8      0x378 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
- .debug_frame   0x0000000000000c30      0x150 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
- .debug_frame   0x0000000000000d80       0xb0 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
- .debug_frame   0x0000000000000e30      0x4d8 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
- .debug_frame   0x0000000000001308      0x140 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
- .debug_frame   0x0000000000001448      0x174 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
- .debug_frame   0x00000000000015bc       0x68 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
- .debug_frame   0x0000000000001624       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
- .debug_frame   0x0000000000001650       0x30 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_frame   0x0000000000001680       0x30 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
- .debug_frame   0x00000000000016b0       0xa0 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
- .debug_frame   0x0000000000001750       0x34 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
- .debug_frame   0x0000000000001784       0x30 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
- .debug_frame   0x00000000000017b4       0x34 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
- .debug_frame   0x00000000000017e8       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
- .debug_frame   0x00000000000018d4       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
- .debug_frame   0x00000000000019c0       0x30 /tmp/ccfIGHhz.o
- .debug_frame   0x00000000000019f0       0x38 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
- .debug_frame   0x0000000000001a28       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
- .debug_frame   0x0000000000001a50       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
- .debug_frame   0x0000000000001a70       0x38 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
- .debug_frame   0x0000000000001aa8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000000000001ac8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
- .debug_frame   0x0000000000001ae8       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+ .debug_frame   0x0000000000000528       0x88 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+ .debug_frame   0x00000000000005b0       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+ .debug_frame   0x00000000000005dc       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+ .debug_frame   0x0000000000000608       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+ .debug_frame   0x0000000000000634       0x50 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
+ .debug_frame   0x0000000000000684       0x2c build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
+ .debug_frame   0x00000000000006b0       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
+ .debug_frame   0x000000000000079c      0x1a4 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
+ .debug_frame   0x0000000000000940       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+ .debug_frame   0x0000000000000a2c       0xec build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+ .debug_frame   0x0000000000000b18      0x378 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
+ .debug_frame   0x0000000000000e90      0x150 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
+ .debug_frame   0x0000000000000fe0       0xb0 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
+ .debug_frame   0x0000000000001090      0x4d8 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+ .debug_frame   0x0000000000001568      0x140 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+ .debug_frame   0x00000000000016a8      0x174 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
+ .debug_frame   0x000000000000181c       0x68 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+ .debug_frame   0x0000000000001884       0x2c build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+ .debug_frame   0x00000000000018b0       0x30 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+ .debug_frame   0x00000000000018e0       0x30 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+ .debug_frame   0x0000000000001910       0xa0 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+ .debug_frame   0x00000000000019b0       0x34 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+ .debug_frame   0x00000000000019e4       0x30 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+ .debug_frame   0x0000000000001a14       0x34 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+ .debug_frame   0x0000000000001a48       0x30 /tmp/ccQqh8Ft.o
+ .debug_frame   0x0000000000001a78       0x38 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+ .debug_frame   0x0000000000001ab0       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+ .debug_frame   0x0000000000001ad8       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+ .debug_frame   0x0000000000001af8       0x38 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+ .debug_frame   0x0000000000001b30       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000001b50       0x20 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+ .debug_frame   0x0000000000001b70       0x28 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
 
 .debug_ranges   0x0000000000000000       0xb0
  .debug_ranges  0x0000000000000000       0x10 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
- .debug_ranges  0x0000000000000010       0x18 /tmp/ccfIGHhz.o
+ .debug_ranges  0x0000000000000010       0x18 /tmp/ccQqh8Ft.o
  .debug_ranges  0x0000000000000028       0x18 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
  .debug_ranges  0x0000000000000040       0x10 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
  .debug_ranges  0x0000000000000050       0x10 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
@@ -902,73 +910,73 @@ LOAD stack
  .bss           0x0000000000000000        0x0 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
 
 .bss%z10        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 /tmp/ccfIGHhz.o
+ .bss           0x0000000000000000        0x0 /tmp/ccQqh8Ft.o
 
 .bss%z11        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
-
-.bss%z12        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
-
-.bss%z13        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
-
-.bss%z14        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
 
-.bss%z15        0x0000000000000000        0x0
+.bss%z12        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
 
-.bss%z16        0x0000000000000000        0x0
+.bss%z13        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
 
-.bss%z17        0x0000000000000000        0x0
+.bss%z14        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
 
-.bss%z18        0x0000000000000000        0x0
+.bss%z15        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
 
-.bss%z19        0x0000000000000000        0x0
+.bss%z16        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
 
-.bss%z20        0x0000000000000000        0x0
+.bss%z17        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
 
-.bss%z21        0x0000000000000000        0x0
+.bss%z18        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/ARM_CM0/port.o
 
-.bss%z22        0x0000000000000000        0x0
+.bss%z19        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
 
-.bss%z23        0x0000000000000000        0x0
+.bss%z20        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
 
-.bss%z24        0x0000000000000000        0x0
+.bss%z21        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
 
-.bss%z25        0x0000000000000000        0x0
+.bss%z22        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
 
-.bss%z26        0x0000000000000000        0x0
+.bss%z23        0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+
+.bss%z24        0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+
+.bss%z25        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
 
-.bss%z27        0x0000000000000000        0x0
+.bss%z26        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
 
-.bss%z28        0x0000000000000000        0x0
+.bss%z27        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
 
-.bss%z29        0x0000000000000000        0x0
+.bss%z28        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
 
-.bss%z30        0x0000000000000000        0x0
+.bss%z29        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
 
-.bss%z31        0x0000000000000000        0x0
+.bss%z30        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
 
-.bss%z32        0x0000000000000000        0x0
+.bss%z31        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+
+.bss%z32        0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
 
 .bss%z33        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
@@ -1035,76 +1043,76 @@ LOAD stack
  .data          0x0000000000000000        0x0 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
 
 .data%z50       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 /tmp/ccfIGHhz.o
+ .data          0x0000000000000000        0x0 /tmp/ccQqh8Ft.o
 
 .data%z51       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
-
-.data%z52       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
-
-.data%z53       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
-
-.data%z54       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
 
-.data%z55       0x0000000000000000        0x0
+.data%z52       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
 
-.data%z56       0x0000000000000000        0x0
+.data%z53       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
 
-.data%z57       0x0000000000000000        0x0
+.data%z54       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
 
-.data%z58       0x0000000000000000        0x0
+.data%z55       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
 
-.data%z59       0x0000000000000000        0x0
+.data%z56       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
 
-.data%z60       0x0000000000000000        0x0
+.data%z57       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
 
-.data%z61       0x0000000000000000        0x0
+.data%z58       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
 
-.data%z62       0x0000000000000000        0x0
+.data%z59       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
 
-.data%z63       0x0000000000000000        0x0
+.data%z60       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
 
-.data%z64       0x0000000000000000        0x0
+.data%z61       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/list.o
 
-.data%z65       0x0000000000000000        0x0
+.data%z62       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/event_groups.o
 
-.data%z66       0x0000000000000000        0x0
+.data%z63       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/queue.o
 
-.data%z67       0x0000000000000000        0x0
+.data%z64       0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.o
+
+.data%z65       0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.o
+
+.data%z66       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.o
 
-.data%z68       0x0000000000000000        0x0
+.data%z67       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.o
 
-.data%z69       0x0000000000000000        0x0
+.data%z68       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
 
-.data%z70       0x0000000000000000        0x0
+.data%z69       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.o
 
-.data%z71       0x0000000000000000        0x0
+.data%z70       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
 
-.data%z72       0x0000000000000000        0x0
+.data%z71       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
 
-.data%z73       0x0000000000000000        0x0
+.data%z72       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+
+.data%z73       0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
 
 .data%z74       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_24CSM01.o
@@ -1262,7 +1270,7 @@ LOAD stack
                 0x0000000000004418                xControl_HAL_EEP_24CM01_PUT
                 0x000000000000449e                xControl_HAL_EEP_24CM01_GET
                 0x0000000000004530                xControl_HAL_EEP_24CM01_PUTS
-                0x000000000000466e                xControl_HAL_EEP_24CM01_GETS
+                0x000000000000466c                xControl_HAL_EEP_24CM01_GETS
 
 .text%20        0x0000000000004770      0x414
  .text          0x0000000000004770      0x414 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.o
@@ -1336,134 +1344,141 @@ LOAD stack
                 0x0000000000005e18                vSystemOS_QUEUES_CONFIGURE
                 0x0000000000005e58                vSystemOS_TASKS_CONFIGURE
 
-.text%30        0x0000000000005ec4       0xbc
- .text          0x0000000000005ec4       0xbc build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
+.text%30        0x0000000000005ec4       0xb6
+ .text          0x0000000000005ec4       0xb6 build/GameCat_R4/debug/SAMD_TASK/Task_EXEC_MUXC.o
                 0x0000000000005ec4                vTask_EXEC_MUXC
 
-.dinit%31       0x0000000000005f80       0xa0
- .dinit         0x0000000000005f80       0xa0 data_init
+.text%31        0x0000000000005f7c       0xac
+ .text          0x0000000000005f7c       0xac build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
+                0x0000000000005f7c                vAuxliar_MCP2518FD_SEND_RESET
+                0x0000000000005fac                vAuxliar_MCP2518FD_WRITE_REGISTER
+                0x0000000000005fe4                vAuxliar_MCP2518FD_READ_REGISTER
+                0x000000000000601c                vControl_MCP2518FD_CONFIGURE
 
-.text%32        0x0000000000006020       0x98
- .text          0x0000000000006020       0x98 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
-                0x0000000000006020                vDriver_SAMD_GCLK_CONFIGURE
+.dinit%32       0x0000000000006028       0xa0
+ .dinit         0x0000000000006028       0xa0 data_init
 
-.text%33        0x00000000000060b8       0x8c
- .text          0x00000000000060b8       0x8c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
-                0x00000000000060b8                __udivsi3
-                0x00000000000060b8                __aeabi_uidiv
-                0x0000000000006130                __aeabi_uidivmod
+.text%33        0x00000000000060c8       0x98
+ .text          0x00000000000060c8       0x98 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.o
+                0x00000000000060c8                vDriver_SAMD_GCLK_CONFIGURE
 
-.text%34        0x0000000000006144       0x78
- .text          0x0000000000006144       0x78 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
-                0x0000000000006144                xStream_LED_COMMAND
+.text%34        0x0000000000006160       0x8c
+ .text          0x0000000000006160       0x8c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x0000000000006160                __udivsi3
+                0x0000000000006160                __aeabi_uidiv
+                0x00000000000061d8                __aeabi_uidivmod
 
-.text%35        0x00000000000061bc       0x74
- .text          0x00000000000061bc       0x74 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
-                0x00000000000061bc                vDriver_SAMD_SYSCTRL_CONFIGURE
+.text%35        0x00000000000061ec       0x78
+ .text          0x00000000000061ec       0x78 build/GameCat_R4/debug/SAMD_STREAMS/Stream_CTRL_LEDC.o
+                0x00000000000061ec                xStream_LED_COMMAND
 
-.text.__libc_start_init%36
-                0x0000000000006230       0x5c
+.text%36        0x0000000000006264       0x74
+ .text          0x0000000000006264       0x74 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.o
+                0x0000000000006264                vDriver_SAMD_SYSCTRL_CONFIGURE
+
+.text.__libc_start_init%37
+                0x00000000000062d8       0x5c
  .text.__libc_start_init
-                0x0000000000006230       0x5c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
-                0x0000000000006230                __libc_init_array
+                0x00000000000062d8       0x5c /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+                0x00000000000062d8                __libc_init_array
 
-.text.Reset_Handler%37
-                0x000000000000628c       0x54
+.text.Reset_Handler%38
+                0x0000000000006334       0x54
  .text.Reset_Handler
-                0x000000000000628c       0x54 /tmp/ccfIGHhz.o
-                0x000000000000628c                Reset_Handler
+                0x0000000000006334       0x54 /tmp/ccQqh8Ft.o
+                0x0000000000006334                Reset_Handler
 
-.text%38        0x00000000000062e0       0x4a
- .text          0x00000000000062e0       0x4a build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
-                0x00000000000062e0                main
+.text%39        0x0000000000006388       0x4e
+ .text          0x0000000000006388       0x4e build/GameCat_R4/debug/SAMD_MAIN/Function_MAIN.o
+                0x0000000000006388                main
 
-.text%39        0x000000000000632c       0x48
- .text          0x000000000000632c       0x48 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.text%40        0x00000000000063d8       0x48
+ .text          0x00000000000063d8       0x48 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.text%40        0x0000000000006374       0x38
- .text          0x0000000000006374       0x38 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
-                0x0000000000006374                vDriver_SAMD_PM_CONFIGURE
+.text%41        0x0000000000006420       0x38
+ .text          0x0000000000006420       0x38 build/GameCat_R4/debug/SAMD_DRIVERS_HAL/Driver_SAMD_PM.o
+                0x0000000000006420                vDriver_SAMD_PM_CONFIGURE
 
-.text.__pic32c_data_initialization%41
-                0x00000000000063ac       0x34
+.text.__pic32c_data_initialization%42
+                0x0000000000006458       0x34
  .text.__pic32c_data_initialization
-                0x00000000000063ac       0x34 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
-                0x00000000000063ac                __pic32c_data_initialization
+                0x0000000000006458       0x34 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+                0x0000000000006458                __pic32c_data_initialization
 
-.text%42        0x00000000000063e0       0x2c
- .text          0x00000000000063e0       0x2c build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
-                0x00000000000063e0                NonMaskableInt_Handler
-                0x00000000000063e8                HardFault_Handler
-                0x0000000000006404                Dummy_Handler
+.text%43        0x000000000000648c       0x2c
+ .text          0x000000000000648c       0x2c build/GameCat_R4/debug/SAMD_INTERRUPTIONS/Interruption_TRAP.o
+                0x000000000000648c                NonMaskableInt_Handler
+                0x0000000000006494                HardFault_Handler
+                0x00000000000064b0                Dummy_Handler
 
-.rodata%43      0x000000000000640c       0x24
- .rodata        0x000000000000640c       0x24 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
+.rodata%44      0x00000000000064b8       0x24
+ .rodata        0x00000000000064b8       0x24 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.o
 
-.rodata%44      0x0000000000006430       0x24
- .rodata        0x0000000000006430       0x24 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
+.rodata%45      0x00000000000064dc       0x24
+ .rodata        0x00000000000064dc       0x24 build/GameCat_R4/debug/SAMD_TASK/Settings_TASKS.o
 
-.text%45        0x0000000000006454       0x20
- .text          0x0000000000006454       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
-                0x0000000000006454                vTask_CTRL_CANC
+.text%46        0x0000000000006500       0x20
+ .text          0x0000000000006500       0x20 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_CANC.o
+                0x0000000000006500                vTask_CTRL_CANC
 
-.text.__dinit_copy%46
-                0x0000000000006474       0x1e
+.text.__dinit_copy%47
+                0x0000000000006520       0x1e
  .text.__dinit_copy
-                0x0000000000006474       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
-                0x0000000000006474                __dinit_copy
-                0x0000000000006474                __dinit_copy_needed
+                0x0000000000006520       0x1e /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
+                0x0000000000006520                __dinit_copy
+                0x0000000000006520                __dinit_copy_needed
 
-.RamFunc%47     0x0000000000006492       0x1a
- .RamFunc       0x0000000000006492       0x1a build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
-                0x0000000000006492                vStorage_DELAY
+.RamFunc%48     0x000000000000653e       0x1a
+ .RamFunc       0x000000000000653e       0x1a build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
+                0x000000000000653e                vStorage_DELAY
 
-.rodata%48      0x00000000000064ac       0x14
- .rodata        0x00000000000064ac       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+.rodata%49      0x0000000000006558       0x14
+ .rodata        0x0000000000006558       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
 
-.text.memcpy%49
-                0x00000000000064c0       0x14
- .text.memcpy   0x00000000000064c0       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
-                0x00000000000064c0                memcpy
+.text.memcpy%50
+                0x000000000000656c       0x14
+ .text.memcpy   0x000000000000656c       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memcpy.o)
+                0x000000000000656c                memcpy
 
-.text.memset%50
-                0x00000000000064d4       0x14
- .text.memset   0x00000000000064d4       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
-                0x00000000000064d4                memset
+.text.memset%51
+                0x0000000000006580       0x14
+ .text.memset   0x0000000000006580       0x14 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libc-size-musl.a(memset.o)
+                0x0000000000006580                memset
 
-.text.__dinit_clear%51
-                0x00000000000064e8       0x12
+.text.__dinit_clear%52
+                0x0000000000006594       0x12
  .text.__dinit_clear
-                0x00000000000064e8       0x12 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
-                0x00000000000064e8                __dinit_clear_needed
-                0x00000000000064e8                __dinit_clear
+                0x0000000000006594       0x12 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_clear.o)
+                0x0000000000006594                __dinit_clear_needed
+                0x0000000000006594                __dinit_clear
 
-.rodata%52      0x00000000000064fc       0x10
- .rodata        0x00000000000064fc       0x10 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
-                0x00000000000064fc                GPIO_LEDS
+.rodata%53      0x00000000000065a8       0x10
+ .rodata        0x00000000000065a8       0x10 build/GameCat_R4/debug/SAMD_TASK/Task_CTRL_LEDC.o
+                0x00000000000065a8                GPIO_LEDS
 
-.rodata%53      0x000000000000650c        0x8
- .rodata        0x000000000000650c        0x8 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
+.rodata%54      0x00000000000065b8        0x8
+ .rodata        0x00000000000065b8        0x8 build/GameCat_R4/debug/SAMD_FreeRTOS/tasks.o
 
-.rodata%54      0x0000000000006514        0x4
- .rodata        0x0000000000006514        0x4 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
+.rodata%55      0x00000000000065c0        0x4
+ .rodata        0x00000000000065c0        0x4 build/GameCat_R4/debug/SAMD_FreeRTOS/Portable/MemMang/heap_4.o
 
-.text.__dummy_decompress%55
-                0x0000000000006518        0x4
+.text.__dummy_decompress%56
+                0x00000000000065c4        0x4
  .text.__dummy_decompress
-                0x0000000000006518        0x4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
-                0x0000000000006518                __dinit_copy_emb
-                0x0000000000006518                __dinit_decompress
-                0x0000000000006518                __dinit_copy_val_data
+                0x00000000000065c4        0x4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
+                0x00000000000065c4                __dinit_copy_emb
+                0x00000000000065c4                __dinit_decompress
+                0x00000000000065c4                __dinit_copy_val_data
 
-.text%56        0x000000000000651c        0x4
- .text          0x000000000000651c        0x4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x000000000000651c                __aeabi_ldiv0
-                0x000000000000651c                __aeabi_idiv0
+.text%57        0x00000000000065c8        0x4
+ .text          0x00000000000065c8        0x4 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000000065c8                __aeabi_ldiv0
+                0x00000000000065c8                __aeabi_idiv0
 
-.text.Dummy_Handler%57
+.text.Dummy_Handler%58
                 0x0000000000005dce        0x2
  .text.Dummy_Handler
-                0x0000000000005dce        0x2 /tmp/ccfIGHhz.o
+                0x0000000000005dce        0x2 /tmp/ccQqh8Ft.o
                 0x0000000000005dce                SVCall_Handler
                 0x0000000000005dce                DMAC_Handler
                 0x0000000000005dce                AC_Handler
@@ -1494,11 +1509,11 @@ LOAD stack
                 0x0000000000005dce                TC5_Handler
                 0x0000000000005dce                SYSCTRL_Handler
 
-.text.__dummy%58
-                0x000000000000632a        0x2
- .text.__dummy  0x000000000000632a        0x2 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
-                0x000000000000632a                __init_host
-                0x000000000000632a                __init_stdio
+.text.__dummy%59
+                0x0000000000005f7a        0x2
+ .text.__dummy  0x0000000000005f7a        0x2 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libg-musl.a(__libc_start_main.o)
+                0x0000000000005f7a                __init_host
+                0x0000000000005f7a                __init_stdio
 
 .text%z80       0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(pic32_data_init_copy.o)
@@ -1531,16 +1546,13 @@ LOAD stack
  .text          0x0000000000000000        0x0 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v6-m/nofp/libpic32c.a(data_init.o)
 
 .text%z90       0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 /tmp/ccfIGHhz.o
+ .text          0x0000000000000000        0x0 /tmp/ccQqh8Ft.o
 
 .text%z91       0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.o
-
-.text%z92       0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_MAIN/Storage_DELAY.o
 
-.text%z93       0x0000000000000000        0x0
+.text%z92       0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 build/GameCat_R4/debug/SAMD_FreeRTOS/timers.o
 
-.text%z94       0x0000000000000000        0x0
+.text%z93       0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 /opt/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v6-m/nofp/crti.o

@@ -28,6 +28,7 @@
 #include "Control_HAL_23K256.h"
 #include "Control_HAL_24CSM01.h"
 #include "Control_HAL_JOYSTICK.h"
+#include "Control_HAL_MCP2518FD.h"
 #include "Control_HAL_SST25VF016.h"
 
 /******************************************************************************/
