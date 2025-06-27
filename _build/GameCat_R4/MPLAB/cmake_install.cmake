@@ -1,4 +1,4 @@
-# Install script for directory: /home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB
+# Install script for directory: /home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/cmake/GameCat_R4/MPLAB
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/_build/GameCat_R4/MPLAB/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

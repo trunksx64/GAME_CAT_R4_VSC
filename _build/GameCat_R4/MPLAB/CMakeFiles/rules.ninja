@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/STMicroelectronics/STM32CubeCLT/CMake/bin/cmake --regenerate-during-build -S/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB -B/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB
+  command = /opt/STMicroelectronics/STM32CubeCLT/CMake/bin/cmake --regenerate-during-build -S/home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/cmake/GameCat_R4/MPLAB -B/home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/_build/GameCat_R4/MPLAB
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /home/xDNA/.mplab/app-finder/apps/ninja/v1.12.1/ninja $FILE_ARG -t clean $TARGETS
+  command = /opt/STMicroelectronics/STM32CubeCLT/Ninja/bin/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /home/xDNA/.mplab/app-finder/apps/ninja/v1.12.1/ninja -t targets
+  command = /opt/STMicroelectronics/STM32CubeCLT/Ninja/bin/ninja -t targets
   description = All primary targets available:
 

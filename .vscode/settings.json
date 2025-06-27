@@ -1,7 +1,7 @@
 {
-    "cmake.sourceDirectory": "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB",
+    "cmake.sourceDirectory": "/home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/cmake/GameCat_R4/MPLAB",
     "mplab.clangd.arguments": [
-        "--compile-commands-dir=${userHome}/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB"
+        "--compile-commands-dir=${userHome}/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/_build/GameCat_R4/MPLAB"
     ],
     "mplab.clangd.path": "/opt/microchip/xc32/v4.60/bin/xc32-clangd",
     "mplab.project.workspace.addNewSourceFiles": "Always",

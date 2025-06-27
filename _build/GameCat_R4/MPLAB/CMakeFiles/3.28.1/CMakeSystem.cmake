@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.15.3-zen1-1-zen")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/.generated/toolchain.cmake")
+include("/home/xDNA/Archives/Documents/MPLABX/GAME_CAT_R4_VSC/cmake/GameCat_R4/MPLAB/.generated/toolchain.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")
