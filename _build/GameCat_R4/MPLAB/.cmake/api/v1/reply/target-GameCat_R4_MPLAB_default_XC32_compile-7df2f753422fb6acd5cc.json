@@ -1,0 +1,507 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_23K256.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_24CSM01.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_PM.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/Portable/ARM_CM0/port.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/Portable/MemMang/heap_4.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/event_groups.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/list.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/queue.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/tasks.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/timers.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_INTERRUPTIONS/Interruption_TRAP.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_MAIN/Function_MAIN.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_MAIN/Storage_DELAY.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_STREAMS/Stream_CTRL_LEDC.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Settings_TASKS.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_CTRL_CANC.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_CTRL_LEDC.c.o"
+		},
+		{
+			"path" : "CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir/./home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_EXEC_MUXC.c.o"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"target_compile_options",
+			"GameCat_R4_MPLAB_default_XC32_compile_rule",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			".generated/main.cmake",
+			"CMakeLists.txt",
+			".generated/rule.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 52,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 53,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 57,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"backtrace" : 5,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-x"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "c"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-c"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mprocessor=ATSAMD21G18A"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mdfp=/home/xDNA/.mchp_packs/Microchip/SAMD21_DFP/3.6.144/samd21a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "XPRJ_MPLAB=MPLAB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_DRIVERS_HAL"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_CONTROL_HAL"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_MAIN"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_INTERRUPTIONS"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_STREAMS"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_TASK"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_FreeRTOS"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_FreeRTOS/Include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_FreeRTOS/Portable/ARM_CM0"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/cmake/GameCat_R4/MPLAB/../../../SAMD_FreeRTOS/Portable/MemMang"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/xDNA/.mchp_packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"id" : "GameCat_R4_MPLAB_default_XC32_compile::@6890427a1f51a3e7e1df",
+	"name" : "GameCat_R4_MPLAB_default_XC32_compile",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_23K256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_24CSM01.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_MCP2518FD.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_CONTROL_HAL/Control_HAL_SST25VF016.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_ADC.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_GCLK.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_PM.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_PORT.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM1_I2CM.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM2_SPIM.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM3_SPIM.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SERCOM4_SPIM.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_DRIVERS_HAL/Driver_SAMD_SYSCTRL.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/Portable/ARM_CM0/port.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/Portable/MemMang/heap_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/event_groups.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/tasks.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_FreeRTOS/timers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_INTERRUPTIONS/Interruption_TRAP.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_MAIN/Function_MAIN.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_MAIN/Storage_DELAY.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_STREAMS/Stream_CTRL_LEDC.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Settings_TASKS.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_CTRL_CANC.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_CTRL_LEDC.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/SAMD_TASK/Task_EXEC_MUXC.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

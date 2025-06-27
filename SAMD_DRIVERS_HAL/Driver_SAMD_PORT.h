@@ -108,53 +108,53 @@
 /******************************************************************************/
 
 /* Configuration ::: Ports(Pins) :: LED(BUSY) : (PA15) ------------------- */
-#define LED_BUSY_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA30)
-#define LED_BUSY_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA30)
-#define LED_BUSY_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA30)
+#define LED_BUSY_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA30)
+#define LED_BUSY_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA30)
+#define LED_BUSY_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA30)
 
 /* Configuration ::: Ports(Pins) :: LED(CTRL) : (PA08) ------------------- */
-#define LED_CTRL_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA31)
-#define LED_CTRL_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA31)
-#define LED_CTRL_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA31)
+#define LED_CTRL_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA31)
+#define LED_CTRL_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA31)
+#define LED_CTRL_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA31)
 
 /******************************************************************************/
 /* == Configuration Macros = GPIO = Mux Outputs == */
 /******************************************************************************/
 
 /* Configuration ::: Ports(Pins) :: MUXA : (PA20) ------------------- */
-#define MUX_PINA_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA20)
-#define MUX_PINA_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA20)
-#define MUX_PINA_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA20)
-#define MUX_PINA_OUT(D)         (((!!D) ? (MUX_PINA_SET()) : (MUX_PINA_CLR())))
+#define MUX_PINA_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA20)
+#define MUX_PINA_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA20)
+#define MUX_PINA_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA20)
+#define MUX_PINA_OUT(D)        (((!!D) ? (MUX_PINA_SET()) : (MUX_PINA_CLR())))
 
 /* Configuration ::: Ports(Pins) :: MUXB : (PA20) ------------------- */
-#define MUX_PINB_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA19)
-#define MUX_PINB_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA19)
-#define MUX_PINB_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA19)
-#define MUX_PINB_OUT(D)         (((!!D) ? (MUX_PINB_SET()) : (MUX_PINB_CLR())))
+#define MUX_PINB_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA19)
+#define MUX_PINB_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA19)
+#define MUX_PINB_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA19)
+#define MUX_PINB_OUT(D)        (((!!D) ? (MUX_PINB_SET()) : (MUX_PINB_CLR())))
 
 /* Configuration ::: Ports(Pins) :: MUXC : (PA20) ------------------- */
-#define MUX_PINC_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA18)
-#define MUX_PINC_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA18)
-#define MUX_PINC_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA18)
-#define MUX_PINC_OUT(D)         (((!!D) ? (MUX_PINC_SET()) : (MUX_PINC_CLR())))
+#define MUX_PINC_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA18)
+#define MUX_PINC_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA18)
+#define MUX_PINC_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA18)
+#define MUX_PINC_OUT(D)        (((!!D) ? (MUX_PINC_SET()) : (MUX_PINC_CLR())))
 
 /******************************************************************************/
 /* == Definition ::: Configuration Macros for Inputs Control == */
 /******************************************************************************/
 
 /* Control ::: Read Senses */
-#define JOYSTICK_BUTTON_Z()     !!(PORT_REGS->GROUP[GPIO_PORTA].PORT_IN & PORT_PA03)
+#define JOYSTICK_BUTTON_Z()    !!(PORT_REGS->GROUP[GPIO_PORTA].PORT_IN & PORT_PA03)
 
 /******************************************************************************/
 /* == Configuration Macros = GPIO = FLASH Outputs == */
 /******************************************************************************/
 
 /* Configuration ::: Ports(Pins) :: MUXA : (PA20) ------------------- */
-#define FLASH_SS_CLR()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA07)
-#define FLASH_SS_SET()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA07)
-#define FLASH_SS_TGL()          (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA07)
-#define FLASH_SS_OUT(D)         (((!!D) ? (FLASH_SS_SET()) : (FLASH_SS_CLR())))
+#define FLASH_SS_CLR()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTCLR = PORT_PA07)
+#define FLASH_SS_SET()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTSET = PORT_PA07)
+#define FLASH_SS_TGL()         (PORT_REGS->GROUP[GPIO_PORTA].PORT_OUTTGL = PORT_PA07)
+#define FLASH_SS_OUT(D)        (((!!D) ? (FLASH_SS_SET()) : (FLASH_SS_CLR())))
 
 /******************************************************************************/
 /* == Configuration Macros = GPIO = SRAM Outputs == */

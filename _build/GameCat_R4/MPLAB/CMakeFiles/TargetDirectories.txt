@@ -1,0 +1,5 @@
+/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/CMakeFiles/GameCat_R4_MPLAB_default_XC32_compile.dir
+/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/CMakeFiles/GameCat_R4.elf.dir
+/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/CMakeFiles/GameCat_R4_MPLAB_Bin2Hex.dir
+/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/CMakeFiles/edit_cache.dir
+/home/xDNA/Archives/Documents/MPLABX/GameCat_R4_VSC/_build/GameCat_R4/MPLAB/CMakeFiles/rebuild_cache.dir

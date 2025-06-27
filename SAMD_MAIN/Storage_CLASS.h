@@ -39,9 +39,11 @@
 /* Include ::: Header Standard Types */
 #include "ctype.h"
 #include "stdbool.h"
+#include "stdint.h"
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
+
 
 /* Include ::: SAM */
 #include <xc.h>
@@ -58,14 +60,10 @@ typedef int8_t int08_t;
 #define UINT08_MAX UINT8_MAX
 
 /* Definition ::: Get Type pf Variable */
-enum VALUE_TYPE_UNSIGNED {
-    UINT1, UINT8, UINT16, UINT32, UINT64, UINVALID
-};
+enum VALUE_TYPE_UNSIGNED { UINT1, UINT8, UINT16, UINT32, UINT64, UINVALID };
 #define TYPE_NAME_UNSIGNED(X) _Generic((X), uint01_t: UINT1, uint08_t: UINT8, uint16_t: UINT16, uint32_t: UINT32, uint64_t: UINT64, default: UINVALID)
 
-enum VALUE_TYPE_SIGNED {
-    INT8, INT16, INT32, INT64, INVALID
-};
+enum VALUE_TYPE_SIGNED { INT8, INT16, INT32, INT64, INVALID };
 #define TYPE_NAME_SIGNED(X)    _Generic((X), int08_t: INT8, int16_t: INT16, int32_t: INT32, int64_t: INT64, default: INVALID)
 
 /* Definition ::: Configuration Macros Management Bits */
@@ -80,22 +78,22 @@ enum VALUE_TYPE_SIGNED {
 #define SWAP_UINT08(BYTE)      (uint08_t)((BYTE >> 4U) | (BYTE << 4U))
 #define SWAP_UINT16(WORD)      (uint16_t)((WORD >> 8U) | (WORD << 8U))
 #define SWAP_UINT32(LONG)      (uint32_t)((LONG >> 24U) | ((LONG & 0x00FF0000) >> 8U) | ((LONG & 0x0000FF00) << 8U) | (LONG << 24U))
-#define ROUND_UP(A, B)         (((A) - 1U) / (B) + 1U)
+#define ROUND_UP(A, B)         (((A)-1U) / (B) + 1U)
 #define ABS(X)                 ((X) > 0U ? (X) : -(X))
 
 /* Definition ::: Configuration Macros Management Min & Max */
-#define MAX(X, Y)                                                                                                                                                                                                                                              \
-  ({                                                                                                                                                                                                                                                           \
-    typeof(X) A = (X);                                                                                                                                                                                                                                         \
-    typeof(Y) B = (Y);                                                                                                                                                                                                                                         \
-    A > B ? A : B;                                                                                                                                                                                                                                             \
+#define MAX(X, Y)      \
+  ({                   \
+    typeof(X) A = (X); \
+    typeof(Y) B = (Y); \
+    A > B ? A : B;     \
   })
 
-#define MIN(X, Y)                                                                                                                                                                                                                                              \
-  ({                                                                                                                                                                                                                                                           \
-    typeof(X) A = (X);                                                                                                                                                                                                                                         \
-    typeof(Y) B = (Y);                                                                                                                                                                                                                                         \
-    A < B ? A : B;                                                                                                                                                                                                                                             \
+#define MIN(X, Y)      \
+  ({                   \
+    typeof(X) A = (X); \
+    typeof(Y) B = (Y); \
+    A < B ? A : B;     \
   })
 
 /* Definition ::: Configuration Macros Management Utils */
@@ -113,53 +111,53 @@ enum VALUE_TYPE_SIGNED {
 #define INTERRUPTS_DISABLE()           __ASM volatile(" cpsid i " ::: "memory")
 #define INTERRUPTS_ENABLE()            __ASM volatile(" cpsie i " ::: "memory")
 
-#define NOP()                          __ASM volatile ("nop")
+#define NOP()                          __ASM volatile("nop")
 #define RESET()                        NVIC_SystemReset()
 
 #ifdef __DEBUG
-#define pdNOP() NOP()
+  #define pdNOP() NOP()
 #else
-#define pdNOP() 
+  #define pdNOP()
 #endif
 
 #define ENTER_CRITICAL_MANAGEMENT()
 #define EXIT_CRITICAL_MANAGEMENT()
 
 /* Definition ::: Configuration Macros Management Bits Labels */
-#define pdCLR                   (false)
-#define pdSET                   (true)
+#define pdCLR         (false)
+#define pdSET         (true)
 
-#define pdEVEN                  (false)
-#define pdODD                   (true)
+#define pdEVEN        (false)
+#define pdODD         (true)
 
 /* Definition ::: Configuration Macros Management Control Labels */
-#define pdNULL                  (0U)
-#define pdPASSED                (1U)
-#define pdDISABLE               (2U)
-#define pdENABLE                (3U)
-#define pdPROGRAM               (4U)
-#define pdSTOCK                 (5U)
-#define pdOVERLOAD              (6U)
-#define pdREVIEW                (7U)
-#define pdEMPHY                 (9U)
-#define pdFULL                  (10U)
-#define pdERROR                 (11U)
-#define pdFAILED                (12U)
-#define pdBAD_ADDRESS           (13U)
-#define pdINVALID_ARG           (14U)
-#define pdDENIED                (15U)
-#define pdUNSUPPORTED           (16U)
-#define pdRESET                 (255U)
+#define pdNULL        (0U)
+#define pdPASSED      (1U)
+#define pdDISABLE     (2U)
+#define pdENABLE      (3U)
+#define pdPROGRAM     (4U)
+#define pdSTOCK       (5U)
+#define pdOVERLOAD    (6U)
+#define pdREVIEW      (7U)
+#define pdEMPHY       (9U)
+#define pdFULL        (10U)
+#define pdERROR       (11U)
+#define pdFAILED      (12U)
+#define pdBAD_ADDRESS (13U)
+#define pdINVALID_ARG (14U)
+#define pdDENIED      (15U)
+#define pdUNSUPPORTED (16U)
+#define pdRESET       (255U)
 
 /* Definition ::: Configuration Macros Management Loops Labels */
-#define RUN_LOOP                (true)
-#define RUN_MAIN                (true)
-#define RUN_TASK                (true)
-#define RUN_FUNCTION            (true)
-#define RUN_RUTINE              (true)
-#define RUN_CORUTINE            (true)
-#define RUN_THREAD              (true)
-#define RETURN_FREE             (true)
-#define RETURN_PASS             (true)
+#define RUN_LOOP      (true)
+#define RUN_MAIN      (true)
+#define RUN_TASK      (true)
+#define RUN_FUNCTION  (true)
+#define RUN_RUTINE    (true)
+#define RUN_CORUTINE  (true)
+#define RUN_THREAD    (true)
+#define RETURN_FREE   (true)
+#define RETURN_PASS   (true)
 
 #endif /* STORAGE_CLASS_H */

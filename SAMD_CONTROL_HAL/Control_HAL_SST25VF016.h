@@ -1,5 +1,5 @@
 #ifndef CONTROL_HAL_SST25VF016_H
-#define	CONTROL_HAL_SST25VF016_H
+#define CONTROL_HAL_SST25VF016_H
 
 /* Configuration Main Settings */
 #include "Storage_CLASS.h"
@@ -103,5 +103,4 @@ void vControl_HAL_FLASH_SST25VF016_CHIP_ERASE(void);
 uint16_t xControl_HAL_FLASH_SST25VF016_GET_DEVICE_ID(uint01_t ADD);
 uint32_t xControl_HAL_FLASH_SST25VF016_GET_JEDEC(void);
 
-#endif	/* CONTROL_HAL_SST25VF016_H */
-
+#endif /* CONTROL_HAL_SST25VF016_H */

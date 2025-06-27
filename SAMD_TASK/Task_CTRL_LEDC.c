@@ -22,111 +22,109 @@ const uint32_t GPIO_LEDS[2U][2U] = {
 
 void vTask_CTRL_LEDC(void *pvParameters) {
 
-    /****************************************************************************/
-    /* == Local = Variables                                                     */
-    /****************************************************************************/
+  /****************************************************************************/
+  /* == Local = Variables                                                     */
+  /****************************************************************************/
 
-    /* Initialize ::: Current Tick */
-    TickType_t xLAST_WAKE_THREAD = xTaskGetTickCount();
+  /* Initialize ::: Current Tick */
+  TickType_t xLAST_WAKE_THREAD = xTaskGetTickCount();
 
-    /*--------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------*/
 
-    /* Control  ::: Variables */
-    xStream_Led_Config_t BUFFER_LED_DATA = {0U}; // Buffer Queue
-    xStream_Led_Counter_t COUNTER_LED[sizeof (GPIO_LEDS) / sizeof (uint64_t)] = {0U}; // Control LEDS
+  /* Control  ::: Variables */
+  xStream_Led_Config_t BUFFER_LED_DATA = {0U};                                    // Buffer Queue
+  xStream_Led_Counter_t COUNTER_LED[sizeof(GPIO_LEDS) / sizeof(uint64_t)] = {0U}; // Control LEDS
 
-    /* Toggle ::: Toggle LED Check Hardware */
-    xStream_LED_COMMAND(NUM_LED_BUSY, CMD_LED_TGL, 50U);
-    /* Toggle ::: Toggle LED Check Hardware */
-    xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 100U);
+  /* Toggle ::: Toggle LED Check Hardware */
+  xStream_LED_COMMAND(NUM_LED_BUSY, CMD_LED_TGL, 50U);
+  /* Toggle ::: Toggle LED Check Hardware */
+  xStream_LED_COMMAND(NUM_LED_CTRL, CMD_LED_TGL, 100U);
 
-    /****************************************************************************/
-    /* == Execution = Infinite Loop Task                                        */
-    /****************************************************************************/
+  /****************************************************************************/
+  /* == Execution = Infinite Loop Task                                        */
+  /****************************************************************************/
 
-    /* Execution ::: Task */
-    START_TASK() {
-        /* Break ::: DEBUG */
-        pdNOP();
+  /* Execution ::: Task */
+  START_TASK() {
+    /* Break ::: DEBUG */
+    pdNOP();
 
-        /**************************************************************************/
-        /** Check Buffer ::: Waiting Messages Control                             */
-        /**************************************************************************/
+    /**************************************************************************/
+    /** Check Buffer ::: Waiting Messages Control                             */
+    /**************************************************************************/
 
-        if (uxQueueMessagesWaiting(xStatementSystemOS.QUEUE.CONF_LED)) {
-            /* Break ::: DEBUG */
-            pdNOP();
+    if (uxQueueMessagesWaiting(xStatementSystemOS.QUEUE.CONF_LED)) {
+      /* Break ::: DEBUG */
+      pdNOP();
 
-            /* Execute ::: Queue is Full */
-            do {
-                /* GET :: Message from Buffer */
-                if (xQueueReceive(xStatementSystemOS.QUEUE.CONF_LED, (void *) &BUFFER_LED_DATA, 0U)) {
-                    /* Check ::: maximun LEDS */
-                    if (BUFFER_LED_DATA.NUMBER_LED < (sizeof (COUNTER_LED) / sizeof (xStream_Led_Counter_t))) {
-                        /* SET ::: Control */
-                        COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].COMMAD = BUFFER_LED_DATA.COMMAND;
+      /* Execute ::: Queue is Full */
+      do {
+        /* GET :: Message from Buffer */
+        if (xQueueReceive(xStatementSystemOS.QUEUE.CONF_LED, (void *)&BUFFER_LED_DATA, 0U)) {
+          /* Check ::: maximun LEDS */
+          if (BUFFER_LED_DATA.NUMBER_LED < (sizeof(COUNTER_LED) / sizeof(xStream_Led_Counter_t))) {
+            /* SET ::: Control */
+            COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].COMMAD = BUFFER_LED_DATA.COMMAND;
 
-                        /* CHK ::: Toggle or Timer */
-                        if ((BUFFER_LED_DATA.COMMAND == CMD_LED_TGL) || (BUFFER_LED_DATA.COMMAND == CMD_LED_TMR)) {
-                            /* Getting ::: Current Time */
-                            COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].TIME_OVERFLOW = BUFFER_LED_DATA.TIMER;
-                            COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].TIME_LAST = xTaskGetTickCount();
-                            /* CLR ::: Current LED Loop */
-                            PORT_REGS->GROUP[GPIO_LEDS[BUFFER_LED_DATA.NUMBER_LED][0U]].PORT_OUTCLR = GPIO_LEDS[BUFFER_LED_DATA.NUMBER_LED][1U];
-                        }
-                    }
-                }
-            } while (uxQueueMessagesWaiting(xStatementSystemOS.QUEUE.CONF_LED));
-        }
-
-
-        /**************************************************************************/
-        /** Loop ::: Control One Led Time                                         */
-        /**************************************************************************/
-
-        for (uint08_t I_COUNT = 0U; (I_COUNT < (sizeof (COUNTER_LED) / sizeof (xStream_Led_Counter_t))); I_COUNT++) {
-            /* Break ::: DEBUG */
-            pdNOP();
-
-            /* Control ::: LED Command Storage */
-            switch (COUNTER_LED[I_COUNT].COMMAD) {
-                case CMD_LED_CLR:
-                    /* CLR ::: Current LED Loop */
-                    PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
-                    break;
-                case CMD_LED_SET:
-                    /* SET ::: Current LED Loop */
-                    PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTSET = GPIO_LEDS[I_COUNT][1U];
-                    break;
-                case CMD_LED_TGL:
-                    /* CHK ::: Overflow Time */
-                    if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= (COUNTER_LED[I_COUNT].TIME_OVERFLOW / 2U)) {
-                        /* UDP ::: Last Time */
-                        COUNTER_LED[I_COUNT].TIME_LAST = xTaskGetTickCount();
-                        /* TGL ::: Current LED Loop */
-                        PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTTGL = GPIO_LEDS[I_COUNT][1U];
-                    }
-                    break;
-                case CMD_LED_TMR:
-                    /* CHK ::: LED Enabled */
-                    if (!!(PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR & GPIO_LEDS[I_COUNT][1U])) {
-                        /* CHK ::: Overflow Time */
-                        if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= COUNTER_LED[I_COUNT].TIME_OVERFLOW) {
-                            /* CLR ::: Variable Output */
-                            PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
-                        }
-                    }
-                    break;
+            /* CHK ::: Toggle or Timer */
+            if ((BUFFER_LED_DATA.COMMAND == CMD_LED_TGL) || (BUFFER_LED_DATA.COMMAND == CMD_LED_TMR)) {
+              /* Getting ::: Current Time */
+              COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].TIME_OVERFLOW = BUFFER_LED_DATA.TIMER;
+              COUNTER_LED[BUFFER_LED_DATA.NUMBER_LED].TIME_LAST = xTaskGetTickCount();
+              /* CLR ::: Current LED Loop */
+              PORT_REGS->GROUP[GPIO_LEDS[BUFFER_LED_DATA.NUMBER_LED][0U]].PORT_OUTCLR = GPIO_LEDS[BUFFER_LED_DATA.NUMBER_LED][1U];
             }
+          }
         }
-
-
-        /**************************************************************************/
-        /** Delay Until ::: Task Time Recurring                                   */
-        /**************************************************************************/
-
-        vTaskDelayUntil(&xLAST_WAKE_THREAD, TASK_TIME_RECURRING);
+      } while (uxQueueMessagesWaiting(xStatementSystemOS.QUEUE.CONF_LED));
     }
-    /* End of Execution ::: Task */
-    END_TASK();
+
+    /**************************************************************************/
+    /** Loop ::: Control One Led Time                                         */
+    /**************************************************************************/
+
+    for (uint08_t I_COUNT = 0U; (I_COUNT < (sizeof(COUNTER_LED) / sizeof(xStream_Led_Counter_t))); I_COUNT++) {
+      /* Break ::: DEBUG */
+      pdNOP();
+
+      /* Control ::: LED Command Storage */
+      switch (COUNTER_LED[I_COUNT].COMMAD) {
+        case CMD_LED_CLR:
+          /* CLR ::: Current LED Loop */
+          PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
+          break;
+        case CMD_LED_SET:
+          /* SET ::: Current LED Loop */
+          PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTSET = GPIO_LEDS[I_COUNT][1U];
+          break;
+        case CMD_LED_TGL:
+          /* CHK ::: Overflow Time */
+          if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= (COUNTER_LED[I_COUNT].TIME_OVERFLOW / 2U)) {
+            /* UDP ::: Last Time */
+            COUNTER_LED[I_COUNT].TIME_LAST = xTaskGetTickCount();
+            /* TGL ::: Current LED Loop */
+            PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTTGL = GPIO_LEDS[I_COUNT][1U];
+          }
+          break;
+        case CMD_LED_TMR:
+          /* CHK ::: LED Enabled */
+          if (!!(PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR & GPIO_LEDS[I_COUNT][1U])) {
+            /* CHK ::: Overflow Time */
+            if ((xTaskGetTickCount() - COUNTER_LED[I_COUNT].TIME_LAST) >= COUNTER_LED[I_COUNT].TIME_OVERFLOW) {
+              /* CLR ::: Variable Output */
+              PORT_REGS->GROUP[GPIO_LEDS[I_COUNT][0U]].PORT_OUTCLR = GPIO_LEDS[I_COUNT][1U];
+            }
+          }
+          break;
+      }
+    }
+
+    /**************************************************************************/
+    /** Delay Until ::: Task Time Recurring                                   */
+    /**************************************************************************/
+
+    vTaskDelayUntil(&xLAST_WAKE_THREAD, TASK_TIME_RECURRING);
+  }
+  /* End of Execution ::: Task */
+  END_TASK();
 }
