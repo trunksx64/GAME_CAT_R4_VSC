@@ -2,7 +2,7 @@
     "version": 6,
     "configurePresets": [
         {
-            "name": "GAME_CAT_R4_VSC",
+            "name": "GAME_CAT_R4_VSC_MPLAB_conf",
             "binaryDir": "${fileDir}/../../../_build/GAME_CAT_R4_VSC/MPLAB",
             "generator": "Ninja",
             "toolchainFile": "${fileDir}/.generated/toolchain.cmake",

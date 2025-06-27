@@ -1,9 +1,9 @@
 # The following variables contains the files used by the different stages of the build process.
-set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_assemble)
-set_source_files_properties(${GameCat_R4_MPLAB_default_XC32_FILE_TYPE_assemble} PROPERTIES LANGUAGE ASM)
-set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_assembleWithPreprocess)
-set_source_files_properties(${GameCat_R4_MPLAB_default_XC32_FILE_TYPE_assembleWithPreprocess} PROPERTIES LANGUAGE ASM)
-set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_compile
+set(GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_assemble)
+set_source_files_properties(${GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_assemble} PROPERTIES LANGUAGE ASM)
+set(GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_assembleWithPreprocess)
+set_source_files_properties(${GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_assembleWithPreprocess} PROPERTIES LANGUAGE ASM)
+set(GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_CONTROL_HAL/Control_HAL_23K256.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_CONTROL_HAL/Control_HAL_24CSM01.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_CONTROL_HAL/Control_HAL_JOYSTICK.c"
@@ -33,12 +33,12 @@ set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_TASK/Task_CTRL_CANC.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_TASK/Task_CTRL_LEDC.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SAMD_TASK/Task_EXEC_MUXC.c")
-set_source_files_properties(${GameCat_R4_MPLAB_default_XC32_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
-set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_compile_cpp)
-set_source_files_properties(${GameCat_R4_MPLAB_default_XC32_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
-set(GameCat_R4_MPLAB_default_XC32_FILE_TYPE_link)
-set(GameCat_R4_MPLAB_image_name "GAME_CAT_R4.elf")
+set_source_files_properties(${GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
+set(GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_compile_cpp)
+set_source_files_properties(${GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
+set(GAME_CAT_R4_VSC_MPLAB_default_XC32_FILE_TYPE_link)
+set(GAME_CAT_R4_VSC_MPLAB_image_name "GAME_CAT_R4_VSC.elf")
 
 
 # The output directory of the final image.
-set(GameCat_R4_MPLAB_output_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../_output")
+set(GAME_CAT_R4_VSC_MPLAB_output_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../_output")

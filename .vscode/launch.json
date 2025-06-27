@@ -5,14 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch GameCat_R4: MPLAB",
+            "name": "Launch GAME_CAT_R4_VSC: MPLAB",
             "type": "mplab-core-da",
             "request": "launch",
             "device": "ATSAMD21G18A",
-            "program": "${workspaceFolder}/_output/GameCat_R4.elf",
+            "program": "${workspaceFolder}/_output/GAME_CAT_R4_VSC.elf",
             "tool": "${command:pickTool}",
             "stopOnEntry": true,
-            "preLaunchTask": "GameCat_R4: MPLAB - Full Build"
+            "preLaunchTask": "GAME_CAT_R4_VSC: MPLAB - Full Build"
         }
     ]
 }
